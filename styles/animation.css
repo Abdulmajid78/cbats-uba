@@ -1,0 +1,48 @@
+.animate-wave {
+	animation: wave 3s ease-in-out 1 forwards;
+}
+
+@keyframes wave {
+	from {
+		width: 100%;
+	}
+	to {
+		width: 0%;
+	}
+}
+
+.animate-wave-bg {
+	/* animation: wave-bg 3s ease-in infinite; */
+	animation: wave-bg 5.5s cubic-bezier(0.61,-0.16, 0.53, 0.25) infinite;
+}
+
+/* .animate-wave-bg-2 {
+	animation-delay: 2s;
+  animation-timing-function: ease-in;
+} */
+
+.animate-wave-bg::before {
+	transform: rotate(-35deg);
+	content: '';
+	display: block;
+	position: absolute;
+	/* background: linear-gradient(-90deg, #E9C085 19.31%, #CF954B 100%); */
+	background: white;
+	opacity: 0.4;
+	height: 130%;
+	width: 30px;
+	top: -40px;
+	left: 0;
+}
+
+@keyframes wave-bg {
+	0% {
+		width: 100%;
+	}
+	60% {
+		width: 0%;
+	}
+	100% {
+		width: 0%;
+	}
+}

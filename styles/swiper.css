@@ -1,0 +1,36 @@
+.swiper-pagination-bullet {
+	width: 10px !important;
+	height: 10px !important;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: hsl(34deg 46% 54%) !important;
+}
+
+.swiper-pagination {
+	bottom: 0 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: hsl(34deg 46% 54%) !important;
+}
+
+.custom-prev-button svg polyline,
+.custom-next-button svg polyline {
+	stroke: hsl(34deg 46% 54%) !important;
+}
+
+.swiper-btn {
+  font-size: 45px;
+  position: absolute;
+  top: 40%;
+}
+
+.custom-prev-button {
+  left: 30px;
+}
+
+.custom-next-button {
+  right: 30px;
+}
