@@ -12,19 +12,13 @@ export type navigationListType = {
 	link: string
 }
 
-export type testimonialsType = {
-	text: string
-	name: string
-	image: string
-	rating: 1 | 2 | 3 | 4 | 5
-}
 
 export type DataParams = {
 	apiKey: string
 	pageSize: number
 	page: number
 	query?: string
-	language?: 'en' | 'ru'
+	language?: 'en' | 'ru' | 'uz'
 	sources: string
 }
 

@@ -27,7 +27,7 @@ import { AiFillFacebook, AiFillGithub } from 'react-icons/ai'
 
 
 const Navigation = () => {
-	const langsList = ['РУ', 'EN', 'UZ']
+	const langsList = ['EN', 'UZ', 'РУ']
 	const [lang, setLang] = useState(langsList[0])
 
 	return (

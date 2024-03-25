@@ -1,4 +1,4 @@
-import { navigationListType, newsDataType, testimonialsType } from './types'
+import { navigationListType, newsDataType } from './types'
 
 export const newsData: newsDataType[] = [
 	{
@@ -48,35 +48,4 @@ export const navigationList: navigationListType[] = [
 	{ name: 'News', link: '#news' },
 ]
 
-export const testimonials: testimonialsType[] = [
-	{
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.',
-		name: 'Finance and Technologies Summit was held......',
-		image: 'testimonials/1.jpg',
-		rating: 5,
-	},
-	{
-		text: 'Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.',
-		name: 'Risk Management Webinar was held for CBATS Members......',
-		image: 'testimonials/2.jpg',
-		rating: 4,
-	},
-	{
-		text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante, commodo iacul viverra.',
-		name: 'Members gathered at the second meeting of The Council of Banks Associations of t...',
-		image: 'testimonials/3.jpg',
-		rating: 5,
-	},
-	{
-		text: 'Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus, metus id mi gravida.',
-		name: 'A webinar on the Correspondent Banking Relations was organized......',
-		image: 'testimonials/4.jpg',
-		rating: 4,
-	},
-	{
-		text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reprehenderit consectetur nihil tio nisi placeat quisquam consequuntur? Totam consectetur nam laboriosam rem dolore?',
-		name: '5Lorem and Technologies Summit was held......',
-		image: 'testimonials/5.jpg',
-		rating: 4,
-	},
-]
+

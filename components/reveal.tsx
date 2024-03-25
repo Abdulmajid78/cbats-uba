@@ -72,7 +72,7 @@ const Reveal = ({
 					style={{ backgroundColor: 'rgb(4 33 26 / 80%)' }}
 				>
 					<Image
-						src='/images/wave.png'
+						src='/images/logo.png'
 						width='0'
 						height='0'
 						sizes='100%'

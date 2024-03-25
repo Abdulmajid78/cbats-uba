@@ -6,7 +6,6 @@ import {
 	News,
 	Footer,
 	Chakkon,
-	Testimonials,
 } from '@components/index'
 
 export default function Home() {
@@ -15,11 +14,10 @@ export default function Home() {
 			<Navigation />
 			<Hero />
 			<AboutUs />
-			<Testimonials/>
 			<Chakkon />
 			<Partners />
 			<News />
-			<Footer />
+			<Footer /> 
 		</div>
 	)
 }
