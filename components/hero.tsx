@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Wave from './wave'
 import AnimatedText from './animatedText'
 
 const Hero = () => {
