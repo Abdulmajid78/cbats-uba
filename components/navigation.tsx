@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
-import React, { useState } from 'react'
-import { Button, buttonVariants } from './ui/button'
+import React, { useState, useEffect } from 'react'
+import { Button } from './ui/button'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import { FiMenu } from 'react-icons/fi'
@@ -15,33 +15,44 @@ import {
 	MenubarTrigger
 } from '@/components/ui/menubar'
 import { navigationList } from '@/lib/data'
-import { ScrollUp } from '@components/index'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from './ui/sheet'
-
-import { useSearchParams } from 'next/navigation'
-
-import { Input } from '@/components/ui/input'
-import { BiLogoGoogle } from 'react-icons/bi'
-import { AiFillFacebook, AiFillGithub } from 'react-icons/ai'
 
 
 const Navigation = () => {
 	const langsList = ['EN', 'UZ', 'РУ']
 	const [lang, setLang] = useState(langsList[0])
 
+	const [scrollHeight, setScrollHeight] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrolled = window.scrollY;
+            setScrollHeight(scrolled);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 	return (
 		<div
-			style={{ background: 'rgb( 0, 168, 207)' }}
-			className="w-full h-60 backdrop-blur-sm sticky z-30 py-1 left-0 top-0"
-		>
-			<div className="container h-60 py-2 flex justify-between items-center">
+		
+			style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
+			className={`w-full py-1 left-0 top-0 sticky z-30 transition-all 
+			${
+                scrollHeight > 0 ? 'h-32' : 'h-60'
+            }`}		>
+			<div className="container py-2 flex justify-between items-center">
 				{/* logo start */}
 				<Link
 					href="/"
-					className="lg:w-[170px] w-32 flex flex-col items-center cursor-pointer relative"
+					className={`flex flex-col items-center cursor-pointer relative ${scrollHeight > 0 ? "w-24" : "lg:w-[170px] w-32" }`}
 				>
 					<Image
-						src="/images/logo.png"
+						src="/images/logo-uba.png"
 						width="0"
 						height="0"
 						sizes="100vw"
@@ -169,6 +180,23 @@ const Navigation = () => {
 						</div>
 					</SheetContent>
 				</Sheet>
+
+				{/* logo start */}
+				<Link
+					href="/"
+					className={`flex flex-col items-center cursor-pointer relative ${scrollHeight > 0 ? "w-24" : "lg:w-[170px] w-32" }`}
+				>
+					<Image
+						src="/images/logo.png"
+						width="0"
+						height="0"
+						sizes="100vw"
+						className="w-auto h-30 mb-1"
+						alt="hero image"
+						priority={true}
+					/>
+				</Link>
+				{/* logo end */}
 			</div>
 		</div>
 	)

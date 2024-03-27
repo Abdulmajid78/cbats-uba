@@ -5,7 +5,7 @@ import {
 	Partners,
 	News,
 	Footer,
-	Chakkon,
+	Events,
 	Registration
 } from '@components/index'
 
@@ -15,7 +15,7 @@ export default function Home() {
 			<Navigation />
 			<Hero />
 			<AboutUs />
-			<Chakkon />
+			<Events />
 			<Registration/>
 			<Partners />
 			<News />

@@ -8,26 +8,6 @@ import { Input } from '@/components/ui/input'
 
 const Registration = () => {
 
-	function Submit(e) {
-		e.preventDefault();
-		const form = e.target;
-		const formData = new FormData();
-		formData.append('CompanyName', form[0].value);
-		formData.append('FullName', form[1].value);
-		formData.append('Phone', form[2].value);
-		formData.append('Email', form[3].value);
-	
-		console.log(formData);
-		axios.post("https://script.google.com/macros/library/d/1C3D_sof_XuVnJ6KduMLLBp-kl1theSFnXqJgHiREr5ZCYPgLOWIP5l27/1", formData)
-			.then((response) => {
-				console.log(response);
-				// Optionally, you can reset the form after successful submission
-				form.reset();
-			}).catch((error) => {
-				console.log(error);
-			});
-	}
-
 	return (
 		<section id="registration" className="container mb-32 scroll-mt-[240px]">
 
@@ -38,7 +18,7 @@ const Registration = () => {
 						<div className="w-full bg-white flex flex-col gap-10 p-16">
 							<h1 className="text-4xl mt-10">Registrate now</h1>
 							<div className={cn('grid gap-3')}>
-								<form className='form' onSubmit={(e) => Submit(e)}>
+								<form className='form'>
 									<div className="grid gap-3">
 										<div className="grid gap-2">
 
@@ -97,69 +77,3 @@ const Registration = () => {
 }
 
 export default Registration
-
-// "use client"
-
-// import React, { useState } from 'react';
-// import axios from 'axios';
-
-// function App() {
-// 	const [name, setName] = useState('');
-// 	const [age, setAge] = useState('');
-// 	const [salary, setSalary] = useState('');
-// 	const [hobby, setHobby] = useState('');
-
-// 	const handleSubmit = (e) => {
-// 		e.preventDefault();
-
-// 		const objt = { name, age, salary, hobby };
-
-// 		axios
-// 			.post(
-// 				'https://sheet.best/api/sheets/8abefc9d-5af1-4c54-b1c3-e010462fd81a',
-// 				objt
-// 			)
-// 			.then((response) => {
-// 				console.log(response);
-// 			});
-// 	};
-
-// 	return (
-// 		<div className="container-fluid">
-// 			<h2>React google sheet</h2>
-// 			<form className="form">
-				
-// 					<label>Name</label>
-// 					<input
-// 						placeholder="Enter your Name"
-// 						onChange={(e) => setName(e.target.value)}
-// 					/>
-				
-// 					<label>Age</label>
-// 					<input
-// 						placeholder="Enter your Age"
-// 						onChange={(e) => setAge(e.target.value)}
-// 					/>
-				
-// 					<label>Salary</label>
-// 					<input
-// 						placeholder="Enter your Salary"
-// 						onChange={(e) => setSalary(e.target.value)}
-// 					/>
-				
-// 					<label>Hobby</label>
-// 					<input
-// 						placeholder="Enter your Hobby"
-// 						onChange={(e) => setHobby(e.target.value)}
-// 					/>
-				
-
-// 				<button color="blue" type="submit" onClick={handleSubmit}>
-// 					Submit
-// 				</button>
-// 			</form>
-// 		</div>
-// 	);
-// }
-
-// export default App;

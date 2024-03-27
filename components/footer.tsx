@@ -11,15 +11,15 @@ import { LiaTelegram } from 'react-icons/lia'
 const Footer = () => {
 	return (
 		<footer
-			style={{ background: 'rgb( 0, 168, 207)' }}
-			className='bg-secondary w-full mt-20 py-5 backdrop-blur-sm'
+		style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
+		className='bg-secondary w-full mt-20 py-5 backdrop-blur-sm'
 		>
 			<div className='container flex justify-between sm:flex-row flex-col gap-5'>
 				<div className='flex flex-col gap-5 justify-between'>
 					<div>
 						<Link href='#!' className='w-40 flex flex-col items-center mb-5'>
 							<Image
-								src='/images/logo.png'
+								src='/images/logo-uba.png'
 								width='0'
 								height='0'
 								sizes='100vw'
@@ -93,6 +93,21 @@ const Footer = () => {
 							info@eastwest.com
 						</li>
 					</ul>
+				</div>
+				<div className='flex flex-col gap-5 justify-between'>
+					<div>
+						<Link href='#!' className='w-40 flex flex-col items-center mb-5'>
+							<Image
+								src='/images/logo.png'
+								width='0'
+								height='0'
+								sizes='100vw'
+								className='w-full h-4/5'
+								alt='hero image'
+								priority={true}
+							/>
+						</Link>
+					</div>
 				</div>
 			</div>
 
