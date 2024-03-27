@@ -102,13 +102,17 @@ const Events = () => {
 							cardSubTitle: 'my-card-subtitle',
 							cardDetailedText: 'mydeailcard',
  					    }}
+						theme={{
+    primary: 'rgba( 0, 168, 287,1)',
+    secondary: 'rgba( 0, 168, 300,1)',
+  }}
 						/>
       			)}	
 					<div className='flex items-center justify-center gap-2'>
-						<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+						<button className="bg-sky-600 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
 							See gallery
 						</button>
-						<button className="bg-blue-500 flex items-center hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+						<button className="bg-sky-600 flex items-center hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
 						<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
 						Download full programm
 						</button>

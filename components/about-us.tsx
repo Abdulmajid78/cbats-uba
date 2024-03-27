@@ -32,6 +32,8 @@ const AboutUs = () => {
 				<div className='rounded-xl w-full flex gap-5 mb-20 items-center'>
 					
 					<div className='w-2/5'>
+                    <h1 className='text-2xl my-5 lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
+							ABOUT CBATS</h1>
 						<Image
 							src='/images/top2.jpg'
 							alt='news image'
@@ -45,9 +47,9 @@ const AboutUs = () => {
 					</div>
 				
 				{/* p */}
-					<div className='flex flex-col w-3/5 mx-2 items-end'>
+					<div className='flex flex-col w-3/5 mx-2 gap-6'>
 							<Reveal>
-								<p className='font-normal lg:text-2xl sm:text-base text-base text-justify pr-5 text-gray-600'>
+								<p className='font-normal pt-10 lg:text-xl sm:text-base text-base text-justify pr-5 text-gray-600'>
 									The Council of Banks Associations of Turkic States operates in order to develop cooperation between member bank associations, to evaluate the demands of bankers and business people correctly, to develop the banking sector, to produce positive outputs for the real sector and national economies, to share experiences by consulting on issues and solutions related to the sector.
 									<br />
 									<br />
@@ -59,7 +61,7 @@ const AboutUs = () => {
 							</Reveal>
 						{/* link */}
 							<Link
-								className='flex opacity-1 gap-3 items-center group text-blue-500'
+								className='flex opacity-1 pt-5 gap-3 group text-blue-500'
 								href='https://www.tdbbk.org/tr'
 							>
 								<p

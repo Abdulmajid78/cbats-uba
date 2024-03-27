@@ -45,7 +45,7 @@ const News = async () => {
 	return (
 		<section id='news' className='container mt-10 scroll-mt-[120px] pt-5'>
 			<Reveal>
-				<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 font-vinnytsia mb-10 text-center'>
+				<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 font-vinnytsia mb-7 text-center'>
 					News
 				</h1>
 			</Reveal>
@@ -180,19 +180,6 @@ const News = async () => {
 						</Reveal>
 					</div>
 				</div>
-			</div>
-			<div className='flex justify-center'>
-				<Link
-					href='/news'
-					className='mt-5 text-blue-500 transition-all bg-[length:0%_1px] hover:bg-[length:100%_1px] duration-200'
-					style={{
-						backgroundImage: ' linear-gradient(currentcolor,currentcolor)',
-						backgroundPosition: '0 100%',
-						backgroundRepeat: ' no-repeat',
-					}}
-				>
-					All news
-				</Link>
 			</div>
 		</section>
 	)

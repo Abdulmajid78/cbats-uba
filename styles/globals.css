@@ -110,6 +110,15 @@ ul.ToolbarWrapper-sc-exupb5-0 {
 	width: 60%!important;
 }
 
+.TitleWrapper-sc-13izrht-0 {
+	color: #0284c7!important;
+}
+
+.TitleWrapper-sc-13izrht-0.active {
+	color: white!important;
+}
+
+
 /* timeline soati */
 .my-title {
 	font-size: 20px!important;
@@ -121,6 +130,7 @@ ul.ToolbarWrapper-sc-exupb5-0 {
 	align-items: center;
 	justify-content: center;
 	font-size: 22px!important;
+	color: #0284c7!important;
 }
 
 .my-card-subtitle {
@@ -132,8 +142,4 @@ ul.ToolbarWrapper-sc-exupb5-0 {
 
 .mydeailcard {
 	font-size: 18px;
-}
-
-.logo-size {
-	width: 90px!important;
 }

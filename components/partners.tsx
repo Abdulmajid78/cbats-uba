@@ -23,7 +23,7 @@ const Partners = () => {
 		'logo8.jpg',
 	]
 	return (
-		<section id='partners' className='container mb-10 scroll-mt-[80px] py-10'>
+		<section id='partners' className='container mb-10 scroll-mt-[100px] py-10'>
 			<div className='2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4 '>
 				<div className='w-full flex flex-col justify-center items-center'>
 					<div className='flex flex-col justify-center items-center text-center space-y-4'>
@@ -39,7 +39,7 @@ const Partners = () => {
 						</Reveal>
 					</div>
 
-					<div className='grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3  justify-items-around gap-x-6 gap-y-6 xl:gap-x-8 mt-10'>
+					<div className='grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3  justify-items-around gap-x-5 gap-y-5 xl:gap-x-8 mt-10'>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-6 space-y-6 group'>
 							<a href="https://uba.uz/ru/">
 							<Image
@@ -52,7 +52,7 @@ const Partners = () => {
 							/>
 							</a>
 						</div>
-						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
+						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
 							<a href="">
 							<Image
 								width={0}
@@ -64,7 +64,7 @@ const Partners = () => {
 							/>
 							</a>
 						</div>
-						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
+						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
 							<Image
 								width={0}
 								height={0}
@@ -74,7 +74,7 @@ const Partners = () => {
 								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
-						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
+						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
 							<Image
 								width={0}
 								height={0}
@@ -84,7 +84,7 @@ const Partners = () => {
 								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
-						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
+						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
 							<Image
 								width={0}
 								height={0}
@@ -94,7 +94,7 @@ const Partners = () => {
 								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
-						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
+						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
 							<a href="https://www.tbb.org.tr/tr">
 								<Image
 								width={0}

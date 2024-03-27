@@ -42,7 +42,7 @@ const Navigation = () => {
 			style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
 			className={`w-full py-1 left-0 top-0 sticky z-30 transition-all backdrop-blur-sm 
 			${
-                scrollHeight > 0 ? 'h-32' : 'h-60'
+                scrollHeight > 0 ? 'h-32' : 'h-56'
             }`}		>
 			<div className="container py-2 flex justify-between items-center">
 				{/* logo start */}

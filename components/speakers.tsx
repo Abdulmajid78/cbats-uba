@@ -39,7 +39,7 @@ const Speakers = () => {
     ));
 
     return (
-        <section id='speakers' className='container-fluid mb-32 scroll-mt-[160px]'>
+        <section id='speakers' className='container-fluid mb-32 scroll-mt-[200px]'>
             <Reveal>
                 <div className='w-2/3 text-center mx-auto'>
                     <h1 className='text-2xl my-5 lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
