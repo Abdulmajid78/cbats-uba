@@ -47,7 +47,7 @@ const Partners = () => {
 								sizes='100vw'
 								src={'/images/logos/logo1.png'}
 								alt='image'
-								className='saturate-0 group-hover:saturate-100'
+								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
@@ -57,7 +57,7 @@ const Partners = () => {
 								sizes='100vw'								
 								src={'/images/logos/logo2.png'}
 								alt='image'
-								className='saturate-0 group-hover:saturate-100'
+								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
@@ -67,7 +67,7 @@ const Partners = () => {
 								sizes='100vw'
 								src={'/images/logos/logo3.png'}
 								alt='image'
-								className='saturate-0 group-hover:saturate-100'
+								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
@@ -77,7 +77,7 @@ const Partners = () => {
 								sizes='100vw'
 								src={'/images/logos/logo4.png'}
 								alt='image'
-								className='saturate-0 group-hover:saturate-100'
+								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
@@ -87,7 +87,7 @@ const Partners = () => {
 								sizes='100vw'
 								src={'/images/logos/logo5.png'}
 								alt='image'
-								className='saturate-0 group-hover:saturate-100'
+								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-16 px-12 space-y-6 group'>
@@ -97,7 +97,7 @@ const Partners = () => {
 								sizes='100vw'
 								src={'/images/logos/logo6.png'}
 								alt='image'
-								className='w-[120px] saturate-0 group-hover:saturate-100'
+								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
 						</div>
 					</div>

@@ -89,14 +89,47 @@ body {
 	}
 }
 
-li.TimelineItemWrapper-sc-1dd6qhe-1 {
-	width: 150px!important;
+#timeline-main-wrapper > .TimelineMain-sc-cif21b-2 {
+	margin-left: 120px!important;
 }
 
+/* timeline */
+li.TimelineItemWrapper-sc-1dd6qhe-1 {
+	display: flex;
+	justify-content: center;
+	width: 200px!important;
+}
+
+/* toolbar */
 ul.ToolbarWrapper-sc-exupb5-0 {
 	display: none;
 }
 
+/* oq card orqasidigi joy */
 .TimelineContentContainer-sc-18iuiou-5 {
-	width: 100%!important;
+	width: 60%!important;
+}
+
+/* timeline soati */
+.my-title {
+	font-size: 20px!important;
+}
+
+/* timeline title */
+.my-card-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px!important;
+}
+
+.my-card-subtitle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px!important;
+}
+
+.mydeailcard {
+	font-size: 18px;
 }

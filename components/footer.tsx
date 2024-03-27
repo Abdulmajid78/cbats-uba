@@ -23,30 +23,16 @@ const Footer = () => {
 								width='0'
 								height='0'
 								sizes='100vw'
-								className='w-full h-auto'
+								className='w-full h-4/5'
 								alt='hero image'
 								priority={true}
 							/>
 						</Link>
 					</div>
 				</div>
-				<div className='text-white'>
+				<div className='text-white w-40'>
 					<h3 className='text-xl mb-3'>Social</h3>
 					<ul className='text-base flex flex-col gap-2'>
-						<li>
-							<a
-								style={{
-									backgroundImage:
-										' linear-gradient(currentcolor,currentcolor)',
-									backgroundPosition: '0 100%',
-									backgroundRepeat: ' no-repeat',
-								}}
-								className='transition-all bg-[length:0%_1px] hover:bg-[length:100%_1px] duration-200'
-								href='https://linkedin.com'
-							>
-								LinkedIn
-							</a>
-						</li>
 						<li>
 							<a
 								style={{
@@ -91,9 +77,9 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className='text-white'>
+				<div className='text-white flex-initial w-2/5 items-end'>
 					<h3 className='text-xl mb-3'>Contact Us</h3>
-					<ul className='flex flex-col gap-2 text-base max-w-sm w-full'>
+					<ul className='flex flex-col gap-2 text-base w-full'>
 						<li>
 							<span className='font-bold'>Address:</span> 100011, Республика
 							Узбекистан, г. Ташкент, ул. Навои, 38
@@ -110,9 +96,14 @@ const Footer = () => {
 				</div>
 			</div>
 
-			<p className='text-white hidden sm:block text-end container pt-5 mt-5'>
+			<div className='container w-50 flex pt-2'>
+			<p className='text-white flex-1'>
 				© 2024. All rights reserved
 			</p>
+			<p className="text-white hover:after:content-['_|_Unique_Future_Tecnology']">
+				Created by UTF 
+			</p>
+			</div>
 		</footer>
 	)
 }

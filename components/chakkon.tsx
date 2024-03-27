@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import React from 'react'
 import Reveal from './reveal'
 import { Chrono } from "react-chrono";
-
 const Chakkon = () => {
 
 	const [isClient, setIsClient] = useState(false);
@@ -15,52 +14,66 @@ const Chakkon = () => {
 
 let items=[
         {
-          title: " 9:30-10:00",
+          title: " 9:30-10:45",
           cardTitle: "Регистрация участников, утренний кофе",
           url: "http://google.com",
           cardSubtitle:
             "Обмен памятными подарками, общее фото",
-          cardDetailedText: `Обмен памятными подарками, общее фото`,
+			cardDetailedText: (
+				<div className='mydeailcard'>
+					Приветствие в адрес участников конференции от имени СБАТC  Модератор – Марат Байтоков
+					<br />
+					10.00-10.05 Бахтияр Хамидов Генеральный директор Ассоциации Банков Узбекистана<br />
+					10.05-10.10 Закир Нуриев Президент Ассоциации Банков Азербайджана <br />
+					<br/>Обмен памятными подарками, общее фото
+				</div>
+			),
         },
         {
-          title: "25 July 1940",
-          cardTitle: "The Battle of Britain",
-          cardSubtitle: `RAF Spitfire pilots scramble for their planes`,
-          cardDetailedText: `After France’s surrender in June 1940, Churchill told the British people, “Hitler knows that he will have to break us in this island or lose the war”. To mount a successful invasion, the Germans had to gain air superiority. The first phase of the battle began on 10 July with Luftwaffe attacks on shipping in the Channel.
-        The following month, RAF Fighter Command airfields and aircraft factories came under attack. Under the dynamic direction of Lord Beaverbrook, production of Spitfire and Hurricane fighters increased, and despite its losses in pilots and planes, the RAF was never as seriously weakened as the Germans supposed.`,
+          title: "10:45-11:45",
+          cardTitle: "Сессия 1 – ФИНТЕХ И БАНКИ",
+          cardSubtitle: `Кофе брейк`,
+		  cardDetailedText: (
+            <div className='mydeailcard'>
+            </div>
+        ),
         },
         {
-          title: "June 1941",
-          cardTitle: "Operation Barbarossa",
-          cardSubtitle: `A column of Red Army prisoners taken during the first days of the German invasion`,
-          cardDetailedText: `Since the 1920s, Hitler had seen Russia, with its immense natural resources, as the principal target for conquest and expansion. It would provide, he believed, the necessary ‘Lebensraum’, or living space, for the German people. And by conquering Russia, Hitler would also destroy the “Jewish pestilential creed of Bolshevism”. His non-aggression pact with Stalin in August 1939 he regarded as a mere temporary expedient.
-        Barely a month after the fall of France, and while the Battle of Britain was being fought, Hitler started planning for the Blitzkrieg campaign against Russia, which began on 22 June 1941. Despite repeated warnings, Stalin was taken by surprise, and for the first few months the Germans achieved spectacular victories, capturing huge swathes of land and hundreds of thousands of prisoners. But they failed to take Moscow or Leningrad before winter set in.
-        On 5/6 December, the Red Army launched a counter-offensive which removed the immediate threat to the Soviet capital. It also brought the German high command to the brink of a catastrophic military crisis. Hitler stepped in and took personal command. His intervention was decisive and he later boasted, “That we overcame this winter and are today in a position again to proceed victoriously… is solely attributable to the bravery of the soldiers at the front and my firm will to hold out…”`,
+          title: "11:45-12:00",
+          cardTitle: "Кофе брейк",
+          cardSubtitle: ``,
+          cardDetailedText: ``,
         },
 		{
-			title: "June 1941",
-			cardTitle: "Operation Barbarossa",
-			cardSubtitle: `A column of Red Army prisoners taken during the first days of the German invasion`,
-			cardDetailedText: `Since the 1920s, Hitler had seen Russia, with its immense natural resources, as the principal target for conquest and expansion. It would provide, he believed, the necessary ‘Lebensraum’, or living space, for the German people. And by conquering Russia, Hitler would also destroy the “Jewish pestilential creed of Bolshevism”. His non-aggression pact with Stalin in August 1939 he regarded as a mere temporary expedient.
-		  Barely a month after the fall of France, and while the Battle of Britain was being fought, Hitler started planning for the Blitzkrieg campaign against Russia, which began on 22 June 1941. Despite repeated warnings, Stalin was taken by surprise, and for the first few months the Germans achieved spectacular victories, capturing huge swathes of land and hundreds of thousands of prisoners. But they failed to take Moscow or Leningrad before winter set in.
-		  On 5/6 December, the Red Army launched a counter-offensive which removed the immediate threat to the Soviet capital. It also brought the German high command to the brink of a catastrophic military crisis. Hitler stepped in and took personal command. His intervention was decisive and he later boasted, “That we overcame this winter and are today in a position again to proceed victoriously… is solely attributable to the bravery of the soldiers at the front and my firm will to hold out…”`,
-		  },
-		  {
-			title: "June 1941",
-			cardTitle: "Operation Barbarossa",
-			cardSubtitle: `A column of Red Army prisoners taken during the first days of the German invasion`,
-			cardDetailedText: `Since the 1920s, Hitler had seen Russia, with its immense natural resources, as the principal target for conquest and expansion. It would provide, he believed, the necessary ‘Lebensraum’, or living space, for the German people. And by conquering Russia, Hitler would also destroy the “Jewish pestilential creed of Bolshevism”. His non-aggression pact with Stalin in August 1939 he regarded as a mere temporary expedient.
-		  Barely a month after the fall of France, and while the Battle of Britain was being fought, Hitler started planning for the Blitzkrieg campaign against Russia, which began on 22 June 1941. Despite repeated warnings, Stalin was taken by surprise, and for the first few months the Germans achieved spectacular victories, capturing huge swathes of land and hundreds of thousands of prisoners. But they failed to take Moscow or Leningrad before winter set in.
-		  On 5/6 December, the Red Army launched a counter-offensive which removed the immediate threat to the Soviet capital. It also brought the German high command to the brink of a catastrophic military crisis. Hitler stepped in and took personal command. His intervention was decisive and he later boasted, “That we overcame this winter and are today in a position again to proceed victoriously… is solely attributable to the bravery of the soldiers at the front and my firm will to hold out…”`,
-		  },
-		  {
-			title: "June 1941",
-			cardTitle: "Operation Barbarossa",
-			cardSubtitle: `A column of Red Army prisoners taken during the first days of the German invasion`,
-			cardDetailedText: `Since the 1920s, Hitler had seen Russia, with its immense natural resources, as the principal target for conquest and expansion. It would provide, he believed, the necessary ‘Lebensraum’, or living space, for the German people. And by conquering Russia, Hitler would also destroy the “Jewish pestilential creed of Bolshevism”. His non-aggression pact with Stalin in August 1939 he regarded as a mere temporary expedient.
-		  Barely a month after the fall of France, and while the Battle of Britain was being fought, Hitler started planning for the Blitzkrieg campaign against Russia, which began on 22 June 1941. Despite repeated warnings, Stalin was taken by surprise, and for the first few months the Germans achieved spectacular victories, capturing huge swathes of land and hundreds of thousands of prisoners. But they failed to take Moscow or Leningrad before winter set in.
-		  On 5/6 December, the Red Army launched a counter-offensive which removed the immediate threat to the Soviet capital. It also brought the German high command to the brink of a catastrophic military crisis. Hitler stepped in and took personal command. His intervention was decisive and he later boasted, “That we overcame this winter and are today in a position again to proceed victoriously… is solely attributable to the bravery of the soldiers at the front and my firm will to hold out…”`,
-		  },
+			title: "12:00-13:00",
+			cardTitle: "Сессия 2 – ЦИФРОВЫЕ ДЕНЬГИ И БАНКИ  ",
+			cardSubtitle: ``,
+			cardDetailedText: ``,
+		},
+		{
+			title: "13:00-14:00",
+			cardTitle: "Обед",
+			cardSubtitle: ``,
+			cardDetailedText: ``,
+		},
+		{
+			title: "14:00-15:00",
+			cardTitle:"Сессия 3 – АНТИФРОД",
+			cardSubtitle: ``,
+			cardDetailedText: ``,
+		},
+		{
+			title: "14:00-15:00",
+			cardTitle:"Кофе брейк",
+			cardSubtitle: ``,
+			cardDetailedText: ``,
+		},
+		{
+			title: "15:30-17:30",
+			cardTitle:"Сессия 4 – ПОПУЛЯРИЗАЦИЯ ИСЛАМСКОГО БАНКИНГА",
+			cardSubtitle: ``,
+			cardDetailedText: ``,
+		},
 		  
       ]
 
@@ -78,18 +91,23 @@ let items=[
 				</div>
 			</Reveal>
 
-			<div className='bg-[#F5F7F8] rounded-xl overflow-hidden flex gap-8 items-center p-10'>
-				<div className='text-center flex flex-col gap-2'>
+			<div className='bg-[#F5F7F8] w-full rounded-xl overflow-hidden flex gap-8 items-center p-10'>
+				<div className='text-center w-full flex flex-col gap-2'>
 					
 				{isClient && (
         			<Chrono
 						items={items}
 						mode="HORIZONTAL"
-					/>
+						classNames={{
+							title: 'my-title',
+							cardTitle: 'my-card-title',
+							cardSubTitle: 'my-card-subtitle',
+							cardDetailedText: 'mydeailcard',
+ 					    }}
+						/>
       			)}	
-					
+				see gallery | download full programm
 				</div>
-				
 			</div>
 		</section>
 	)

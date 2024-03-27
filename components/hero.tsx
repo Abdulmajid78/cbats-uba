@@ -27,9 +27,9 @@ const Hero = () => {
 	const placeholderText: PlaceholderText[] = [
 		{
 			type: 'heading1',
-			text: 'Welcome to CBATS',
+			text: 'Welcome to Uzbekistan',
 			className:
-				'md:text-7xl sm:text-[44px] text-4xl text-center text-gray-800',
+				'md:text-6xl sm:text-[44px] text-4xl text-center text-gray-800',
 		},
 		{
 			type: 'heading2',
@@ -58,7 +58,7 @@ const Hero = () => {
 	}
 
 	return (
-		<section className='min-h-[calc(100vh-85px)] container-fluid relative overflow-hidden flex flex-col justify-center py-16'>
+		<section className='min-h-[calc(100vh-90px)] container-fluid relative overflow-hidden flex flex-col justify-center pt-5 pb-16'>
 			<div className='max-w-[760px] mx-auto rounded-lg lg:-mb-5 sm:mb-0 mb-5 xl:mr-[20%] lg:mr-[13%] font-vinnytsia'>
 							<motion.div
 					className='App'

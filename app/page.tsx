@@ -6,6 +6,7 @@ import {
 	News,
 	Footer,
 	Chakkon,
+	Registration
 } from '@components/index'
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
 			<Hero />
 			<AboutUs />
 			<Chakkon />
+			<Registration/>
 			<Partners />
 			<News />
 			<Footer /> 
