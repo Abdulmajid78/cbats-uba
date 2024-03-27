@@ -12,7 +12,7 @@ const Footer = () => {
 	return (
 		<footer
 		style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
-		className='bg-secondary w-full mt-20 py-5 backdrop-blur-sm'
+		className='bg-secondary w-full mt-4 py-5 backdrop-blur-sm'
 		>
 			<div className='container flex justify-between sm:flex-row flex-col gap-5'>
 				<div className='flex flex-col gap-5 justify-between'>
@@ -23,7 +23,7 @@ const Footer = () => {
 								width='0'
 								height='0'
 								sizes='100vw'
-								className='w-full h-4/5'
+								className='w-2/3 h-2/6'
 								alt='hero image'
 								priority={true}
 							/>
@@ -102,7 +102,7 @@ const Footer = () => {
 								width='0'
 								height='0'
 								sizes='100vw'
-								className='w-full h-4/5'
+								className='w-2/3 h-2/6'
 								alt='hero image'
 								priority={true}
 							/>
@@ -112,12 +112,12 @@ const Footer = () => {
 			</div>
 
 			<div className='container w-50 flex pt-2'>
-			<p className='text-white flex-1'>
-				© 2024. All rights reserved
-			</p>
-			<p className="text-white hover:after:content-['_|_Unique_Future_Tecnology']">
-				Created by UTF 
-			</p>
+				<p className='text-white flex-1'>
+					© 2024. All rights reserved
+				</p>
+				<p className="text-white">
+					Created by UTF | Unique Future Tecnology
+				</p>
 			</div>
 		</footer>
 	)

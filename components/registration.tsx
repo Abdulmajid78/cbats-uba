@@ -9,7 +9,7 @@ import { Input } from '@/components/ui/input'
 const Registration = () => {
 
 	return (
-		<section id="registration" className="container mb-32 scroll-mt-[240px]">
+		<section id="registration" className="container mb-32 scroll-mt-[190px]">
 
 
 			<div className="bg-[#F5F7F8] rounded-xl w-full overflow-hidden flex gap-8 content-center items-center p-10">

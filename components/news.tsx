@@ -43,7 +43,7 @@ const News = async () => {
 	})
 
 	return (
-		<section id='news' className='container mb-10 scroll-mt-[250px] py-5'>
+		<section id='news' className='container mt-10 scroll-mt-[120px] pt-5'>
 			<Reveal>
 				<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 font-vinnytsia mb-10 text-center'>
 					News

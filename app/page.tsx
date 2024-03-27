@@ -2,6 +2,7 @@ import {
 	Navigation,
 	Hero,
 	AboutUs,
+	Speakers,
 	Partners,
 	News,
 	Footer,
@@ -15,6 +16,7 @@ export default function Home() {
 			<Navigation />
 			<Hero />
 			<AboutUs />
+			<Speakers />
 			<Events />
 			<Registration/>
 			<Partners />

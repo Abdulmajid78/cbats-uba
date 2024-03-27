@@ -1,0 +1,23 @@
+<Swiper
+							spaceBetween={50}
+							slidesPerView={1}
+							slidesPerGroup={2}
+							loop={true}
+							autoplay= {{ delay: 3500 }}
+							>
+      
+							{/* <SwiperSlide>
+							<Image
+								src='/images/top.webp'
+								alt='news image'
+								width={0}
+								height={0}
+								sizes='100vw'
+								className='w-max rounded-xl scale-x-[-1]'
+								priority={true}
+								quality={70}
+							/>
+							</SwiperSlide> */}
+							<SwiperSlide>
+							</SwiperSlide>
+						</Swiper>
