@@ -1,18 +1,9 @@
 import React from 'react'
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from './ui/card'
-import { newsData } from '@lib/data'
+
 import { cn, truncateText } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
-import { buttonVariants } from './ui/button'
-import { DataParams, Root, newsDataType } from '@/lib/types'
+import { DataParams, Root } from '@/lib/types'
 import { BsArrowRight } from 'react-icons/bs'
 import Reveal from './reveal'
 

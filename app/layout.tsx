@@ -57,8 +57,9 @@ const sanomat = localFont({
 })
 
 export const metadata: Metadata = {
-	title: 'Home - CBATS',
-	description: 'https://eastwestcooperation.com/',
+	title: 'Home - UBA-CBATS',
+	icons: 'images/logo-uba.png',
+	description: 'Ассоциация банков Узбекистана',
 }
 
 export default function RootLayout({

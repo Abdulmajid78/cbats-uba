@@ -1,11 +1,3 @@
-export type newsDataType = {
-	id: string
-	title: string
-	text: string
-	image: string
-	date: string
-	link: string
-}
 
 export type navigationListType = {
 	name: string
