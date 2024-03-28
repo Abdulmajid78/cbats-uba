@@ -32,11 +32,6 @@ const Partners = () => {
 								CBATS
 							</h1>
 						</Reveal>
-						<Reveal>
-							<p className='text-base leading-6 text-center text-gray-600 w-full max-w-3xl'>
-							The council of banks associations of the turic states
-							</p>
-						</Reveal>
 					</div>
 
 					<div className='grid grid-cols-1 sm:grid-cols-2 w-full lg:grid-cols-3  justify-items-around gap-x-5 gap-y-5 xl:gap-x-8 mt-10'>

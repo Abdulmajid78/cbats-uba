@@ -16,8 +16,8 @@ export default function Home() {
 			<Navigation />
 			<Hero />
 			<AboutUs />
-			<Speakers />
 			<Events />
+			<Speakers />
 			<Registration/>
 			<Partners />
 			<News />

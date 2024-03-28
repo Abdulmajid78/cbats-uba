@@ -42,8 +42,8 @@ export const newsData: newsDataType[] = [
 ]
 
 export const navigationList: navigationListType[] = [
-	{ name: 'Speakers', link: '#speakers' },
 	{ name: 'Events', link: '#events' },
+	{ name: 'Speakers', link: '#speakers' },
 	{ name: 'Registration', link: '#registration' },
 	{ name: 'Partners', link: '#partners' },
 	{ name: 'News', link: '#news' },

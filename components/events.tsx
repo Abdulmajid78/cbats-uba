@@ -16,7 +16,6 @@ const Events = () => {
 			{
 				title: "9:30-10:45",
 				cardTitle: "Регистрация участников, утренний кофе",
-				url: "http://google.com",
 				cardSubtitle:"Обмен памятными подарками, общее фото",
 				cardDetailedText: (
 					<div className='mydeailcard'>
@@ -83,7 +82,7 @@ const Events = () => {
 						Finance trends – FinTech and banks, anti-fraud, popularization of Islamic banking
 					</h1>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>May 7, 2024</h1>
-				<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
+				<h1 className='text-3xl lg:text-4xl leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
 					Event program
 				</h1>
 				</div>
@@ -103,12 +102,12 @@ const Events = () => {
 							cardDetailedText: 'mydeailcard',
  					    }}
 						theme={{
-    primary: 'rgba( 0, 168, 287,1)',
-    secondary: 'rgba( 0, 168, 300,1)',
-  }}
+							primary: 'rgba( 0, 168, 287,1)',
+							secondary: 'rgba( 0, 168, 300,1)',
+						}}
 						/>
       			)}	
-					<div className='flex items-center justify-center gap-2'>
+					<div className='hidden flex items-center justify-center gap-2'>
 						<button className="bg-sky-600 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
 							See gallery
 						</button>

@@ -9,24 +9,9 @@ const Footer = () => {
 	return (
 		<footer
 		style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
-		className='bg-secondary w-full mt-4 pt-5 backdrop-blur-sm'
+		className='bg-secondary w-full mt-4 py-10 backdrop-blur-sm'
 		>
 			<div className='container flex justify-between sm:flex-row flex-col gap-5'>
-				<div className='flex flex-col gap-5 justify-between'>
-					<div>
-						<Link href='#!' className='w-48 flex flex-col items-center mb-5'>
-							<Image
-								src='/images/logo-uba.png'
-								width='0'
-								height='0'
-								sizes='100vw'
-								className='w-2/3 h-2/6'
-								alt='hero image'
-								priority={true}
-							/>
-						</Link>
-					</div>
-				</div>
 				<div className='text-white w-40'>
 					<h3 className='text-xl mb-3'>Social</h3>
 					<ul className='text-base flex flex-row gap-1'>
@@ -93,17 +78,20 @@ const Footer = () => {
 							<span className='font-bold'>Address:</span>Республика
 							Узбекистан, г. Ташкент, ул. Навои, 38
 						</li>
-						<li>
-							<span className='font-bold'>Phone: </span>+998 78 147-77-77
-							&nbsp;&nbsp;&nbsp; +998 78 777-77-77
-						</li>
-						<li>
-							<span className='font-bold'>Email:</span>{' '}
-							info@eastwest.com
-						</li>
+						<div className='flex gap-3'>
+							<li>
+								<span className='font-bold'>Phone: </span>+998 78 147-77-77
+								&nbsp;+998 78 777-77-77
+							</li>
+							<li>
+								<span className='font-bold'>Email:</span>{' '}
+								info@eastwest.com
+							</li>
+						</div>
 					</ul>
 				</div>
-				<div className='container justify-end flex flex-col items-end w-1/3 pb-8 pt-2'>
+
+				<div className='justify-end flex flex-col items-end w-1/3 pt-2'>
 					<p className='text-white'>
 						© 2024. All rights reserved
 					</p>
