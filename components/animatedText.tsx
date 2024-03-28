@@ -58,13 +58,12 @@ const AnimatedText = (props: any) => {
 					<Wrapper key={index}>
 						{words[index].flat().map((element: any, index: any) => {
 							return (
-								<span
+								<span key={index}
 									style={{
 										overflow: 'hidden',
 										display: 'inline-block',
 										transform: 'translateY(25%)',
 									}}
-									key={index}
 								>
 									<motion.span
 										style={{ display: 'inline-block' }}

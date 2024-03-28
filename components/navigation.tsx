@@ -98,7 +98,7 @@ const Navigation = () => {
 									</p>
 
 									<div className='mt-14'>
-										<iframe className='w-full h-96' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11987.402551080744!2d69.2336180576416!3d41.312112800000115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba72319fe35%3A0x13c479f0c40c00e7!2z0JDRgdGB0L7RhtC40LDRhtC40Y8g0LHQsNC90LrQvtCyINCj0LfQsdC10LrQuNGB0YLQsNC90LA!5e0!3m2!1sru!2s!4v1711557353948!5m2!1sru!2s" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+										<iframe className='w-full h-96' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11987.402551080744!2d69.2336180576416!3d41.312112800000115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba72319fe35%3A0x13c479f0c40c00e7!2z0JDRgdGB0L7RhtC40LDRhtC40Y8g0LHQsNC90LrQvtCyINCj0LfQsdC10LrQuNGB0YLQsNC90LA!5e0!3m2!1sru!2s!4v1711557353948!5m2!1sru!2s" style={{border: 0}} allowFullScreen referrerPolicy="no-referrer-when-downgrade"></iframe>
 									</div>
 
 								</div>

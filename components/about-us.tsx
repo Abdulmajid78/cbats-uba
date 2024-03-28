@@ -1,16 +1,11 @@
 "use client"
 
-import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { buttonVariants } from './ui/button'
 import ScrollUp from '@components/scroll-up'
-import { Card, CardContent, CardFooter, CardHeader } from './ui/card'
 import { BsArrowRight } from 'react-icons/bs'
 import Reveal from './reveal'
-import { Scrollbar } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
