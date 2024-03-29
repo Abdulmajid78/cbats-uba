@@ -1,27 +1,5 @@
-import {
-	Navigation,
-	Hero,
-	AboutUs,
-	Speakers,
-	Partners,
-	News,
-	Footer,
-	Events,
-	Registration
-} from '@components/index'
+import { redirect } from 'next/navigation'
 
-export default function Home() {
-	return (
-		<div>
-			<Navigation />
-			<Hero />
-			<AboutUs />
-			<Events />
-			<Speakers />
-			<Registration/>
-			<Partners />
-			<News />
-			<Footer /> 
-		</div>
-	)
+export default function RootPage() {
+    redirect('/en');
 }

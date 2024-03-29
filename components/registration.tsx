@@ -16,7 +16,6 @@ const RegistrationComponent: React.FC = () => {
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		// console.log(companyName, fullName, phone, email)
-		// You can perform your axios request or any other action here
 		const data = {
 			Company_name: companyName,
 			Full_name: fullName,

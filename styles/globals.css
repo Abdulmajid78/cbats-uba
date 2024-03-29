@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import './swiper.css';
-@import 'swiper/css/pagination';
+
 @import './animation.css';
 @import './news.css';
 
@@ -11,6 +10,17 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	background: right 10% / 120% 50% url(../public/images/main-bg.JPG);
+	/* background-size: cover; */
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-clip: initial;
+	background-position: bottom;
+	background-position-x: 10px;
+	background-position-y: 921px;
+  }
 
 @layer base {
 	:root {

@@ -37,7 +37,7 @@ const News = async () => {
 		<section id='news' className='container mt-10 scroll-mt-[120px] pt-5'>
 			<Reveal>
 				<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 font-vinnytsia mb-7 text-center'>
-					News
+					NEWS
 				</h1>
 			</Reveal>
 			<div className='news gap-4'>

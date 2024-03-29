@@ -7,11 +7,11 @@ import ScrollUp from '@components/scroll-up'
 import { BsArrowRight } from 'react-icons/bs'
 import Reveal from './reveal'
 
-// Import Swiper styles
-import 'swiper/css';
 
 
 const AboutUs = () => {
+
+
 	return (
 		<>
 			<ScrollUp />
@@ -30,12 +30,12 @@ const AboutUs = () => {
                     <h1 className='text-2xl my-5 lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
 							ABOUT CBATS</h1>
 						<Image
-							src='/images/top2.jpg'
+							src='/images/top.png'
 							alt='news image'
 							width={0}
 							height={0}
 							sizes='80vw'
-							className='w-full rounded-xl scale-x-[-1]'
+							className='w-full rounded-xl'
 							priority={true}
 							quality={70}
 						/>

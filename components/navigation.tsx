@@ -1,26 +1,44 @@
 'use client'
 import Image from 'next/image'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, ChangeEvent } from 'react'
 import { Button } from './ui/button'
 import Link from 'next/link'
-import { cn } from '@/lib/utils'
 import { FiMenu } from 'react-icons/fi'
-import { RiArrowDropDownLine } from 'react-icons/ri'
 import { MdOutlineLanguage } from 'react-icons/md'
 import {
 	Menubar,
 	MenubarContent,
 	MenubarItem,
 	MenubarMenu,
-	MenubarTrigger
 } from '@/components/ui/menubar'
-import { navigationList } from '@/lib/data'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from './ui/sheet'
+import { navigationListType } from '../lib/types';
+import { useRouter } from 'next/navigation'
+import { useLocale, useTranslations } from 'next-intl'
 
 
 const Navigation = () => {
+
+	const t = useTranslations("Index")
+
+	const navigationList: navigationListType[] = [
+		{ name: t('Events'), link: '#events' },
+		{ name: t('Speakers'), link: '#speakers' },
+		{ name: t('Registration'), link: '#registration' },
+		{ name: t('Partners'), link: '#partners' },
+		{ name: t('News'), link: '#news' },
+	]
+	
+	
+
 	const langsList = ['EN', 'UZ', 'РУ']
-	const [lang, setLang] = useState(langsList[0])
+	// const [isPending, startTransition] = useTranslations();
+	const router = useRouter();
+	const localActive = useLocale();
+	const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+		const nextLocale = e.target.value;
+			router.replace(`/${nextLocale}`)
+	}
 
 	const [scrollHeight, setScrollHeight] = useState(0);
 
@@ -76,7 +94,7 @@ const Navigation = () => {
 						{/* contact */}
 						<Sheet>
 							<SheetTrigger className="text-white lg:text-2xl block text-lg">
-								Contact
+								{t("Contacts")}
 							</SheetTrigger>
 							<SheetContent className="!max-w-[600px] bg-white flex flex-col gap-10 p-20">
 								<h1 className="text-4xl mt-10">Contact Us</h1>
@@ -107,28 +125,20 @@ const Navigation = () => {
 					</ul>
 					<Menubar className="lg:block hidden">
 						<MenubarMenu>
-							<MenubarTrigger className="h-[30px] outline-none">
-								<p className="lg:text-2xl md:text-base flex gap-1 items-center text-white">
-									<span>
-										<MdOutlineLanguage />
-									</span>
-									{lang}
-									<span className={cn('scale-150 transition-all')}>
-										<RiArrowDropDownLine />
-									</span>
+							<div>
+								<p className='lg:text-2xl bg-red md:text-base flex gap-1 items-center text-white'>
+								<span>
+									<MdOutlineLanguage />
+								</span>
+								<select defaultValue={localActive} 
+								// disabled={isPending}
+								 className='bg-transparent h-[30px] outline-none' onChange={onSelectChange} name="" id="">
+									<option value="en">En</option>
+									<option value="uz">Uz</option>
+									<option value="ru">Ru</option>
+								</select>
 								</p>
-							</MenubarTrigger>
-							<MenubarContent className="min-w-[70px] text-center">
-								{langsList.map(langItem => (
-									<MenubarItem
-										onClick={() => setLang(langItem)}
-										key={langItem}
-										className="flex gap-2 text-lg px-5 cursor-pointer"
-									>
-										{langItem}
-									</MenubarItem>
-								))}
-							</MenubarContent>
+							</div>
 						</MenubarMenu>
 					</Menubar>
 				</div>

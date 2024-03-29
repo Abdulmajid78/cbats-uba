@@ -1,11 +1,14 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import insta from './../public/images/svg/Instagram-Plain.svg'
 import twitter from './../public/images/svg/X-Plain.svg'
 import facebook from './../public/images/svg/Facebook-Plain.svg'
+import { useTranslations } from 'next-intl'
 
 const Footer = () => {
+
+	const t = useTranslations("Index")
+
 	return (
 		<footer
 		style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
@@ -75,12 +78,12 @@ const Footer = () => {
 					<h3 className='text-xl mb-3'>Contact Us</h3>
 					<ul className='flex flex-col gap-2 text-base w-full'>
 						<li>
-							<span className='font-bold'>Address:</span>Республика
-							Узбекистан, г. Ташкент, ул. Навои, 38
+							<span className='font-bold'>{t("Address")}:</span>
+								Republic of Uzbekistan, Tashkent, 100027, Koratosh street, 1
 						</li>
 						<div className='flex gap-3'>
 							<li>
-								<span className='font-bold'>Phone: </span>+998 78 147-77-77
+								<span className='font-bold'>Phone: </span>+99871 238-69-61
 								&nbsp;+998 78 777-77-77
 							</li>
 							<li>

@@ -49,7 +49,7 @@ const Speakers = () => {
             <Reveal>
                 <div className='w-2/3 text-center mx-auto'>
                     <h1 className='text-2xl my-5 lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
-                        Our speakers
+                        OUR SPEAKERS
                     </h1>
                 </div>
             </Reveal>
