@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import React from 'react'
 import Reveal from './reveal'
 import { Chrono } from "react-chrono";
+import { useTranslations } from 'next-intl';
 const Events = () => {
 
 	const [isClient, setIsClient] = useState(false);
@@ -102,23 +103,26 @@ const Events = () => {
 			}, 
 		]
 
+		const t = useTranslations("Index")
+
 	return (
 		<section id='events' className='container-fluid mb-32 scroll-mt-[180px]'>
 			<Reveal>
 				<div className='w-2/3 text-center mx-auto'>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
-						Finance trends – FinTech and banks, anti-fraud, popularization of Islamic banking
+						{t("FinanceTrends")}
 					</h1>
-					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>May 7, 2024</h1>
+					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
+						May 7, 2024</h1>
 				<h1 className='text-3xl lg:text-4xl leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
-					Event program
+					{t("EventProgram")}
 				</h1>
 				</div>
 			</Reveal>
 
 			<div className='bg-[#F5F7F8] w-full rounded-xl overflow-hidden flex gap-8 items-center p-10'>
 				<div className='text-center w-full flex flex-col gap-2'>
-					
+
 				{isClient && (
         			<Chrono
 						items={items}

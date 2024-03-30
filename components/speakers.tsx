@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Reveal from './reveal';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { useTranslations } from 'next-intl';
 
 
 const speakers = [
@@ -44,12 +45,14 @@ const Speakers = () => {
         </div>
     ));
 
+    const t = useTranslations("Index")
+
     return (
         <section id='speakers' className='container-fluid mb-32 scroll-mt-[260px]'>
             <Reveal>
                 <div className='w-2/3 text-center mx-auto'>
                     <h1 className='text-2xl my-5 lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
-                        OUR SPEAKERS
+                        {t("OURSPEAKERS")}
                     </h1>
                 </div>
             </Reveal>

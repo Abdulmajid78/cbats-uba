@@ -5,6 +5,7 @@ import { buttonVariants } from './ui/button'
 import { cn } from '@/lib/utils'
 import axios from "axios"
 import { Input } from '@/components/ui/input'
+import { useTranslations } from 'next-intl'
 
 const RegistrationComponent: React.FC = () => {
 
@@ -12,6 +13,8 @@ const RegistrationComponent: React.FC = () => {
 	const [fullName, setFullName] = React.useState('')
 	const [phone, setPhone] = React.useState('')
 	const [email, setEmail] = React.useState('')
+
+	const t = useTranslations("Index")
 
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -41,14 +44,14 @@ const RegistrationComponent: React.FC = () => {
 			<div className="bg-[#F5F7F8] rounded-xl w-full overflow-hidden flex gap-8 content-center items-center p-10">
 				<div className="text-center flex flex-col items-center w-full">
 					<div className="w-full bg-white flex flex-col gap-10 p-16">
-						<h1 className="text-4xl mt-10">Registrate now</h1>
+						<h1 className="text-4xl mt-10">{t("RegistrateNow")}</h1>
 						<div className={cn('grid gap-3')}>
 							<form className='form' onSubmit={handleSubmit}>
 								<div className="grid gap-3">
 									<div className="grid gap-2">
 										<Input
 											id="company"
-											placeholder="Company name"
+											placeholder={t("CompanyName")}
 											type="text"
 											name='CompanyName'
 											autoCapitalize="none"
@@ -59,7 +62,7 @@ const RegistrationComponent: React.FC = () => {
 
 										<Input
 											id="fullname"
-											placeholder="Full name"
+											placeholder={t("FullName")}
 											name='FullName'
 											type="text"
 											autoCapitalize="none"
@@ -70,7 +73,7 @@ const RegistrationComponent: React.FC = () => {
 
 										<Input
 											id="phone"
-											placeholder="Phone"
+											placeholder={t("Phone")}
 											name='Phone'
 											type="text"
 											autoCapitalize="none"
@@ -93,7 +96,7 @@ const RegistrationComponent: React.FC = () => {
 
 									</div>
 									<button type='submit' className={cn(buttonVariants())}>
-										Send info
+										{t("SendInfo")}
 									</button>
 								</div>
 							</form>

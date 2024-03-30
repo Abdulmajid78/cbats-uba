@@ -12,7 +12,7 @@ body {
 }
 
 body {
-	background: right 10% / 120% 50% url(../public/images/main-bg.JPG);
+	/* background: right 10% / 120% 50% url(../public/images/main-bg.JPG); */
 	/* background-size: cover; */
 	background-position: center center;
 	background-repeat: no-repeat;

@@ -26,17 +26,14 @@
         "FullName": "Full name",
         "Phone": "Phone",
         "SendInfo": "Send info",
-        
+
         "NEWS": "NEWS",
-    
-        "Social": "Social",
+
+        "Social": "Socials",
         "ContactUs": "Contact Us",
         "Address": "Address",
         "Email": "Email",
         "RepublicOfUzbekistan": "Republic of Uzbekistan, Tashkent, 100027, Koratosh street, 1",
-        "AllRightsReserved": "© 2024. All rights reserved",
-        "CreatedByUTF": "Created by UTF | Unique Future Tecnology"
-    
-        
+        "AllRightsReserved": "© 2024. All rights reserved"               
     }
 }

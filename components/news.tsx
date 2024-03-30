@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 import { cn, truncateText } from '@/lib/utils'
@@ -6,6 +7,7 @@ import Link from 'next/link'
 import { DataParams, Root } from '@/lib/types'
 import { BsArrowRight } from 'react-icons/bs'
 import Reveal from './reveal'
+import { useTranslations } from 'next-intl'
 
 const API_KEY = '79a7dcd9c61a4a149ad7d7213ab247e0'
 
@@ -33,10 +35,13 @@ const News = async () => {
 		language: 'en',
 	})
 
+	// const t = useTranslations("Index")
+
 	return (
 		<section id='news' className='container mt-10 scroll-mt-[120px] pt-5'>
 			<Reveal>
 				<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 font-vinnytsia mb-7 text-center'>
+					{/* {t("NEWS")} */}
 					NEWS
 				</h1>
 			</Reveal>

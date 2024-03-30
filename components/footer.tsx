@@ -16,7 +16,7 @@ const Footer = () => {
 		>
 			<div className='container flex justify-between sm:flex-row flex-col gap-5'>
 				<div className='text-white w-40'>
-					<h3 className='text-xl mb-3'>Social</h3>
+					<h3 className='text-xl mb-3'>{t("Social")}</h3>
 					<ul className='text-base flex flex-row gap-1'>
 						<li>
 							<a
@@ -75,11 +75,11 @@ const Footer = () => {
 					</ul>
 				</div>
 				<div className='text-white flex-initial w-22 items-end'>
-					<h3 className='text-xl mb-3'>Contact Us</h3>
+					<h3 className='text-xl mb-3'>{t("ContactUs")}</h3>
 					<ul className='flex flex-col gap-2 text-base w-full'>
 						<li>
 							<span className='font-bold'>{t("Address")}:</span>
-								Republic of Uzbekistan, Tashkent, 100027, Koratosh street, 1
+								{t("RepublicOfUzbekistan")}
 						</li>
 						<div className='flex gap-3'>
 							<li>
@@ -87,7 +87,7 @@ const Footer = () => {
 								&nbsp;+998 78 777-77-77
 							</li>
 							<li>
-								<span className='font-bold'>Email:</span>{' '}
+								<span className='font-bold'>{t("Email")}:</span>{' '}
 								info@eastwest.com
 							</li>
 						</div>
@@ -96,7 +96,7 @@ const Footer = () => {
 
 				<div className='justify-end flex flex-col items-end w-1/3 pt-2'>
 					<p className='text-white'>
-						© 2024. All rights reserved
+						{t("AllRightsReserved")}
 					</p>
 					<p className="text-white">
 						Created by UTF | Unique Future Tecnology

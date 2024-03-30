@@ -6,11 +6,12 @@ import React from 'react'
 import ScrollUp from '@components/scroll-up'
 import { BsArrowRight } from 'react-icons/bs'
 import Reveal from './reveal'
+import { useTranslations } from 'next-intl'
 
 
 
 const AboutUs = () => {
-
+const t = useTranslations("Index")
 
 	return (
 		<>
@@ -26,9 +27,7 @@ const AboutUs = () => {
 				</Reveal> */}
 				<div className='rounded-xl w-full flex gap-5 mb-20 items-center'>
 					
-					<div className='w-2/5'>
-                    <h1 className='text-2xl my-5 lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
-							ABOUT CBATS</h1>
+					<div className='w-3/6'>
 						<Image
 							src='/images/top.png'
 							alt='news image'
@@ -42,16 +41,19 @@ const AboutUs = () => {
 					</div>
 				
 				{/* p */}
-					<div className='flex flex-col w-3/5 mx-2 gap-6'>
+					<div className='flex flex-col h-[360px] w-3/5 mx-2'>
+					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
+							{t("ABOUTCBATS")}
+							</h1>
 							<Reveal>
-								<p className='font-normal pt-10 lg:text-xl sm:text-base text-base text-justify pr-5 text-gray-600'>
-									The Council of Banks Associations of Turkic States operates in order to develop cooperation between member bank associations, to evaluate the demands of bankers and business people correctly, to develop the banking sector, to produce positive outputs for the real sector and national economies, to share experiences by consulting on issues and solutions related to the sector.
+								<p className='font-normal pt-4 lg:text-xl sm:text-base text-base text-justify pr-5 text-gray-600'>
+									{t("TheCouncilOf")}
 									<br />
 									<br />
-									It was established on November 4, 2022 in Istanbul.
+									{t("ItWasEstablished")}
 									
 									<br />
-									Its members are the Azerbaijan Banks Association, the Republic of Kazakhstan Banks Association, the Kyrgyzstan Banks Association, the Banks Association of Turkiye, the Participation Banks Association of Turkiye, the Banks Association of Uzbekistan.
+									{t("ItsMembersAre")}
 								</p>
 							</Reveal>
 						{/* link */}
@@ -68,7 +70,7 @@ const AboutUs = () => {
 									}}
 									className='transition-all bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-200'
 								>
-									Learn More
+									{t("LearnMore")}
 								</p>
 								<span className='border border-blue-500 border-1 group-hover:bg-blue-500 group-hover:text-white transition-all group-hover:scale-[1.2] rounded-full p-1'>
 									<BsArrowRight />

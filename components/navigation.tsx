@@ -7,8 +7,6 @@ import { FiMenu } from 'react-icons/fi'
 import { MdOutlineLanguage } from 'react-icons/md'
 import {
 	Menubar,
-	MenubarContent,
-	MenubarItem,
 	MenubarMenu,
 } from '@/components/ui/menubar'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from './ui/sheet'
@@ -31,7 +29,6 @@ const Navigation = () => {
 	
 	
 
-	const langsList = ['EN', 'UZ', 'РУ']
 	// const [isPending, startTransition] = useTranslations();
 	const router = useRouter();
 	const localActive = useLocale();
@@ -132,10 +129,10 @@ const Navigation = () => {
 								</span>
 								<select defaultValue={localActive} 
 								// disabled={isPending}
-								 className='bg-transparent h-[30px] outline-none' onChange={onSelectChange} name="" id="">
-									<option value="en">En</option>
-									<option value="uz">Uz</option>
-									<option value="ru">Ru</option>
+								 className='bg-transparent h-[30px] outline-none' onChange={onSelectChange}>
+									<option className='text-black' value="en">EN</option>
+									<option className='text-black' value="uz">UZ</option>
+									<option className='text-black' value="ru">РУ</option>
 								</select>
 								</p>
 							</div>
