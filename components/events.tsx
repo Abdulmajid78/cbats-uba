@@ -116,7 +116,7 @@ const Events = () => {
 			<Reveal>
 				<div className='w-2/3 text-center mx-auto'>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
-						{t("FinanceTrends")}
+						{t("financee")}
 					</h1>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
 						May 7, 2024</h1>
