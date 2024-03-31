@@ -35,6 +35,58 @@
         "Address": "Address",
         "Email": "Email",
         "RepublicOfUzbekistan": "Republic of Uzbekistan, Tashkent, 100027, Koratosh street, 1",
-        "AllRightsReserved": "© 2024. All rights reserved"               
+        "AllRightsReserved": "© 2024. All rights reserved",
+        
+        "news1": "https://www.uba.uz/en/press_center/news/",
+        "news2": "https://cbu.uz/en/press_center/news/",
+        "news3": "https://gov.uz/en/miit/news/news/",
+
+
+        "event1": "Registration of participants, morning coffee",
+        "event2": "Greetings to the participants of the conference on behalf of the CBATS Moderated by Marat Baitokov, Chairman of the Executive Committee of  Kazakhstan banking Association",
+        "event3": "Bakhtiyar Khamidov, General Director of Uzbekistan banking Association ",
+        "event4": "Zakir Nuriyev President of Azerbaijan banking Association ",
+        "event441": "Ismail Vural Secretary general of  Participation Banks Association of Turkey",
+        "event442": "Marat Baitokov Chairman of the Executive Committee of  Kazakhstan banking Association ",
+        "event443": "Anvar Abdrayev Chairman of the Union of Banks of Kyrgyzstan",
+        "event444": "Alpaslan Çakar Chairman of the Council of Banking Associations of Turkic states",
+        "event5": "Exchange of memorable gifts, group photos",
+
+        "event6": "Session 1 – FINTECH AND BANKS ",
+        "event7": "Moderated by Otabek Nasyrov, Deputy Chairman Of the Fintech Association Of Uzbekistan",
+        "event8": "What changes await the banking system of Uzbekistan Ksenia Konstantinova, Director of the international consulting company Senteo in the regions of Central Asia and the Middle East",
+        "tema2": "Topic 2 ",
+        "event10": "Yunus Abdulov, Executive Director of Azerbaijan banking Association ",
+        "tema3": "Topic 3",
+        "event12": "Vulkan Guldurmez, Chairman of the Board of Ziraat Bank Uzbekistan",
+        "event13": "The ABCDE of Digital Banking Orlando Castellanos, Chief Innovation Officer (CINO), NET info",
+        "coffeebreak": "Coffee break",
+
+        "event15": "Session 2 – DIGITAL MONEY AND BANKS ",
+        "event16": "Moderated by Sanjar Musakhodjaev, Deputy Department of Banking Sector Development, UBA ",
+        "event17": "The impact of digital national currencies on the emission policy of Central Banks JSC “CenterCredit Bank”",
+        "event18": "Overview of the legislative and regulatory framework of digital money in Uzbekistan NAPP",
+        "event19": "Topic 3 Réka Hámori, Hungarian Banking Association",
+        "event20": "Topic 4 Banks of Uzbekistan  ",
+        "lunch": "Lunch",
+        
+        "event22": "Session 3 – ANTI-FRAUD",
+        "event23": "Moderated by  Roman Korbut - Business Development Manager",
+        "event24": "LexisNexis Risk Solutions",
+        "tema1": "Topic 1",
+        "event26": "Central bank of Uzbekistan",
+        "event27": "Payment systems, providers. ((UzCard, Humo, Pay Me, etc.)",
+        "event28": "Zeno Amtmann – OTB Bank",
+        "tema4": "Topic 4",
+        "event30": "Roman Korbut - Business Development Manager, LexisNexis Risk Solutions",
+        
+        "event31": "Session 4 – POPULARIZATION OF ISLAMIC BANKING ",
+        "event32": "Moderated By Fatma Çınar, Association Of  Participation Banks Association of Turkey",
+        "event33": "Approaches to the promotion and popularization of Islamic finance at the state and corporate levels.",
+        "event34": "Yorkulov Umidjon -  Associate-assistant manager IFAAS (Islamic Finance Advisory and Assurance Services)",
+        "event35": "The development of Islamic finance in the Turkic states <br/> Fatma Çınar, Association Of  Participation Banks Association of Turkey ",
+        "event36": "Topic 3 AlHuda Centre of Islamic Banking & Economics (CIBE)",
+        "event37": "Topic 4 Banks of Uzbekistan ",
+        "event38": "Final word,  photographing"
     }
 }

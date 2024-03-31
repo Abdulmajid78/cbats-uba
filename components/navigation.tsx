@@ -76,8 +76,8 @@ const Navigation = () => {
 					/>
 				</Link>
 				{/* logo end */}
-				<div className="flex items-center gap-5">
-					<ul className="lg:flex hidden text-white gap-6 items-center">
+				<div className="lg:flex hidden items-center gap-5">
+					<ul className="flex text-white gap-6 items-center">
 						{navigationList.map(item => (
 							<li key={item.link}>
 								<Link
@@ -144,7 +144,7 @@ const Navigation = () => {
 						<FiMenu fontSize="35px" />
 					</SheetTrigger>
 					<SheetContent
-						className="max-w-[400px] w-full bg-secondary text-white flex flex-col gap-16  overflow-y-scroll">
+						className="max-w-[400px] w-full bg-sky-600 text-white flex flex-col gap-16  overflow-y-scroll">
 						<nav className="flex flex-col gap-6 mt-14">
 							{navigationList.map(item => (
 								<SheetClose asChild key={item.link}>
@@ -190,7 +190,7 @@ const Navigation = () => {
 							className='navb-select bg-transparent h-[30px] outline-none font-serif' onChange={onSelectChange}>
 							<option className='text-black' value="en">EN</option>
 							<option className='text-black' value="uz">UZ</option>
-							<option className='text-black' value="ru">RU</option>
+							<option className='text-black' value="ru">РУ</option>
 						</select>
 						</div>
 					</SheetContent>

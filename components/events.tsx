@@ -14,105 +14,89 @@ const Events = () => {
         setIsClient(true); // Component has mounted, update state to trigger re-render   
 }, []);
 
+	const t = useTranslations("Index")
+
 	const items=[
 			{
 				title: "9:30-10:45",
 				cardDetailedText: (
 					<div className='mydeailcard p-6'>
-						9.30-10.00 Регистрация участников, утренний кофе. <br/>
-						Приветствие в адрес участников конференции от имени СБАТC  Модератор – Марат Байтоков
+						9.30-10.00 {t("event1")} <br/>
+						{t("event2")}
 						<br />
-						10.00-10.05 Бахтияр Хамидов Генеральный директор Ассоциации Банков Узбекистана<br />
-						10.05-10.10 Закир Нуриев Президент Ассоциации Банков Азербайджана <br />
-						10.30-10.45 Обмен памятными подарками, общее фото
+						10.00-10.05 {t("event3")}<br />
+						10.05-10.10 {t("event4")} <br />
+						10.10-10.15 {t("event441")} <br />
+						10.15-10.20 {t("event442")} <br />
+						10.20-10.25 {t("event443")} <br />
+						10.25-10.30 {t("event444")} <br />
+						10.30-10.45 {t("event5")}
 					</div>
 				),
 			},
 			{
-				title: "10:45-11:45",
+				title: "10:45-12:00",
 				cardDetailedText: (
 					<div className='mydeailcard p-6'>
-						Сессия 1 – ФИНТЕХ И БАНКИ <br />Модератор – Отабек Насыров, заместитель Председателя Ассоциации Финтех Узбекистан<br />
-						10.45-11.00 Какие перемены ждут банковскую систему Узбекистана Ксения Константинова, директор международной консалтинговой компании Senteo в регионах Центральной Азии и Ближнего Востока <br />
-						11.00-11.15 <br />Тема 2 <br />Юнус Абдулов, Исполнительный директор Ассоциации Банков Азербайджана <br />
-						Тема 3 <br /> Вулкан Гулдурмез, Председатель правления Ziraat Bank Uzbekistan <br />
-						11.30-11.45 ABCDE Цифровой банкинг Орландо Кастелланос – Главный директор по инновациям (CINO), NETinfo (Кипр) <br />
+						{t("event6")} <br />{t("event7")}<br />
+						10.45-11.00 {t("event8")} <br />
+						11.00-11.15 <br />{t("tema2")} <br />{t("event10")}<br />
+						{t("tema3")} <br /> {t("event12")} <br />
+						11.30-11.45 {t("event13")} <br />
+						11.45-12.00 {t("coffeebreak")}
 					</div>
 				),
 			},
 			{
-			title: "11:45-12:00",
-			cardDetailedText: (
-						<div className='mydeailcard p-6 text-center'>
-							Кофе брейк
-						</div>
-					),
-			},
-			{
-				title: "12:00-13:00",
+				title: "12:00-14:00",
 				cardDetailedText: (
 							<div className='mydeailcard p-6'>
-								Сессия 2 – ЦИФРОВЫЕ ДЕНЬГИ И БАНКИ <br />Модератор – <br />
-								12.00-12.15 Влияние цифровых национальных валют на эмиссионную политику Центральных банков АО “БанкЦентрКредит” <br />
-								12.15-12.30Обзор законодательной и регуляторной основы цифровых денег в Узбекистане НАПП <br />
-								12.30-12.45 Тема 3 Хамори Река – Ассоциация банков Венгрии <br />
-			 					12.45-13.00 Тема 4 Банки РУз
+								{t("event15")} <br />{t("event16")} <br />
+								12.00-12.15  {t("event17")}<br />
+								12.15-12.30 {t("event18")} <br />
+								12.30-12.45 {t("event19")} <br />
+			 					12.45-13.00 {t("event20")}<br />
+								13.00-14.00 {t("lunch")}
 			 				</div>
 						),
 			},
 			{
-				title: "13:00-14:00",
-				cardDetailedText: (
-					<div className='mydeailcard p-6 text-center'>
-						Обед
-					</div>
-				),
-			},
-			{
-				title: "14:00-15:00",
+				title: "14:00-15:30",
 				cardDetailedText: (
 					<div className='mydeailcard p-6'>
-						Сессия 3 – АНТИФРОД <br />Модератор: Роман Корбут – Менеджер по развитию бизнеса. <br /> LexisNexis Risk Solutions<br />
-						14.00-14.15 Тема 1 <br /> Центральный банк Республики Узбекистан (не согласовано)  <br />
-						14.15-14.30 Тема 2 <br /> Платёжные системы, провайдеры. (UzCard, Humo, PayMe и т.д.)  <br /> 
-						14.30-14.45 Тема 3 <br /> Зенон Амтманн – OTB Bank Венгрия <br />
-						14.45-15.00 Тема 4 <br />Роман Корбут - Менеджер по развитию бизнеса. LexisNexis Risk Solutions <br />
+						{t("event22")} <br /> {t("event23")} <br /> {t("event24")}<br />
+						14.00-14.15 {t("tema1")} <br />  {t("event26")} <br />
+						14.15-14.30 {t("tema2")} <br /> {t("event27")} <br /> 
+						14.30-14.45 {t("tema3")} <br /> {t("event28")} <br />
+						14.45-15.00 {t("tema4")} <br /> {t("event30")} <br />
+						15.00-15.30 {t("coffeebreak")}
 					</div>
 						),
 			},
-			{
-				title: "15:00-15:30",
-				cardDetailedText: (
-					<div className='mydeailcard p-6 text-center'>
-						Кофе брейк
-					</div>
-				),
-			},
-			{
+					{
 				title: "15:30-17:30",
 				cardDetailedText: (
 					<div className='mydeailcard p-6'>
-						Сессия 4 – ПОПУЛЯРИЗАЦИЯ ИСЛАМСКОГО БАНКИНГА<br /> Модератор – Фатма Чинар, Ассоциация Банков Участников Турции <br />
-						15.30-15.45 Подходы продвижения и популяризации Исламских финансов на государственном и корпоративном уровнях. <br />
-						Ёркулов Умиджон - сотрудник-ассистент менеджера IFAAS (Консультационные и гарантийные услуги по исламским финансам)  <br /> 
-						15.45-16.00 Развитие исламского финансирования в тюркских странах Фатма Чинар, Ассоциация Банков Участников Турции<br />
-						16.00-16.15 Тема 3 АльХуда ЦИБДЭ <br />
-						16.15-16.30 Тема 4 Банки РУз <br />
-						17.00-17.30 Заключительное слово, фотографирование
+						{t("event31")}<br /> {t("event32")} <br />
+						15.30-15.45 {t("event33")} <br />
+						{t("event34")} merkulov or yorqulov <br /> 
+						15.45-16.00 {t("event35")}<br />
+						16.00-16.15 {t("event36")} <br />
+						16.15-16.30 {t("event37")} <br />
+						17.00-17.30 {t("event38")}
 					</div>
 				),
 			}, 
 		]
 
-		const t = useTranslations("Index")
 
 	return (
 		<section id='events' className='container-fluid mb-32 scroll-mt-[180px]'>
-			{/* <Image
-			width={100}
-			height={100}
-			className='w-full absolute'
-			src="/images/ubabuilding.png" alt="" /> */}
+			<Image
+			width={700}
+			height={700}
+			className='w-full opacity-50 z-[-50] absolute'
+			src="/images/ubabuilding.webp" alt="" />
 			<Reveal>
 				<div className='w-2/3 text-center mx-auto'>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>

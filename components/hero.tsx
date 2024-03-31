@@ -67,7 +67,7 @@ const Hero = () => {
 					animate={'visible'}
 					variants={container}
 				>
-					<div className='container-fluid mx-40'>
+					<div className='container-fluid lg:mx-40 mx-10'>
 						{placeholderText.map((item, index) => {
 							return <AnimatedText {...item} key={index} />
 						})}

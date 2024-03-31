@@ -25,9 +25,9 @@ const t = useTranslations("Index")
 						ABOUT CBATS
 					</h1>
 				</Reveal> */}
-				<div className='rounded-xl w-full flex gap-5 mb-20 items-center'>
+				<div className='rounded-xl w-full flex md:flex-row flex-col gap-5 mb-20 items-center'>
 					
-					<div className='w-3/6'>
+					<div className='xl:w-3/6 w-full'>
 						<Image
 							src='/images/top.png'
 							alt='news image'
@@ -41,12 +41,12 @@ const t = useTranslations("Index")
 					</div>
 				
 				{/* p */}
-					<div className='flex flex-col h-[360px] w-3/5 mx-2'>
+					<div className='flex flex-col h-[360px] w-full xl:w-3/5 mx-2'>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
 							{t("ABOUTCBATS")}
 							</h1>
 							<Reveal>
-								<p className='font-normal pt-4 lg:text-xl sm:text-base text-base text-justify pr-5 text-gray-600'>
+								<p className='font-normal lg:pt-4 lg:text-xl sm:text-base text-base text-justify lg:pr-5 text-gray-600'>
 									{t("TheCouncilOf")}
 									<br />
 									<br />

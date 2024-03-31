@@ -19,7 +19,7 @@ const Footer = () => {
 					<h3 className='text-xl mb-3'>{t("Social")}</h3>
 					<ul className='text-base flex flex-row gap-1'>
 						<li>
-							<a
+							<a target='_blank'
 								style={{
 									backgroundImage:
 										' linear-gradient(currentcolor,currentcolor)',
@@ -27,7 +27,7 @@ const Footer = () => {
 									backgroundRepeat: ' no-repeat',
 								}}
 								className='transition-all text-1xl bg-[length:0%_1px] hover:bg-[length:100%_1px] duration-200'
-								href='https://instagram.com'
+								href='https://www.instagram.com/uba_uz/' 
 							>
 								<Image 
 									width={20} 
@@ -37,7 +37,7 @@ const Footer = () => {
 							</a>
 						</li>
 						<li>
-							<a
+							<a target='_blank'
 								style={{
 									backgroundImage:
 										' linear-gradient(currentcolor,currentcolor)',
@@ -45,7 +45,7 @@ const Footer = () => {
 									backgroundRepeat: ' no-repeat',
 								}}
 								className='transition-all bg-[length:0%_1px] hover:bg-[length:100%_1px] duration-200'
-								href='https://twitter.com'
+								href='https://twitter.com/i/flow/login?redirect_after_login=%2FHadiyaAbdu84744'
 							>
 								<Image 
 									width={30} 
@@ -55,15 +55,15 @@ const Footer = () => {
 							</a>
 						</li>
 						<li>
-							<a
+							<a target='_blank'
 								style={{
 									backgroundImage:
-										' linear-gradient(currentcolor,currentcolor)',
+										'linear-gradient(currentcolor,currentcolor)',
 									backgroundPosition: '0 100%',
 									backgroundRepeat: ' no-repeat',
 								}}
 								className='transition-all bg-[length:0%_1px] hover:bg-[length:100%_1px] duration-200'
-								href='https://facebook.com'
+								href='https://www.facebook.com/profile.php?id=100070436701467'
 							>
 								<Image 
 									width={30} 
@@ -84,11 +84,11 @@ const Footer = () => {
 						<div className='flex gap-3'>
 							<li>
 								<span className='font-bold'>Phone: </span>+99871 238-69-61
-								&nbsp;+998 78 777-77-77
+								&nbsp;
 							</li>
 							<li>
 								<span className='font-bold'>{t("Email")}:</span>{' '}
-								info@eastwest.com
+								<a href="mailto:office@uba.uz">office@uba.uz</a>
 							</li>
 						</div>
 					</ul>

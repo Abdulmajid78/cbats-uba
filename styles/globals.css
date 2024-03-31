@@ -89,15 +89,23 @@ body {
 }
 
 #timeline-main-wrapper > .TimelineMain-sc-cif21b-2 {
-	margin-left: 120px!important;
+	width: 100%!important;
+	margin: auto!important;
 }
 
-/* timeline */
-li.TimelineItemWrapper-sc-1dd6qhe-1 {
-	display: flex;
-	justify-content: center;
-	width: 200px!important;
+.TimelineMainWrapper-sc-cif21b-1 {
+	width: 60%!important;
+	margin-left: 20%!important;
+	margin-right: 20%!important;
+	display: flex!important;
+	align-items: center!important;
+	justify-content: center!important;
 }
+
+.TimelineHorizontalWrapper-sc-1dd6qhe-0 ul li div {
+	width: 20%!important;
+}
+
 
 /* toolbar */
 ul.ToolbarWrapper-sc-exupb5-0 {
@@ -152,3 +160,17 @@ select.navb-select option {
 }
 
 
+@media screen and (max-width: 900px) {
+	.TimelineMainWrapper-sc-cif21b-1 {
+		width: 100%!important;
+		margin-left:0%!important;
+		margin-right: 0%!important;
+		display: flex!important;
+		align-items: center!important;
+		justify-content: center!important;
+	}
+
+	.TimelineContentContainer-sc-18iuiou-5 {
+		width: 90%!important;
+	}
+}

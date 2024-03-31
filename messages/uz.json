@@ -19,7 +19,7 @@
         "LearnMore": "Batafsil",
     
         "financee": "Moliya tendentsiyalari - FinTech va banklar, antifrod, Islom bankini ommalashtirish.",
-        "EventProgram": "Tadbir dasturi",
+        "EventProgram": "Tadbir programmasi",
         "OURSPEAKERS": "BIZNING MA'RUZACHILARIMIZ",
     
         "RegistrateNow": "Hozir ro'yxatdan o'tish",
@@ -35,7 +35,59 @@
         "Address": "Manzil",
         "Email": "Elektron pochta",
         "RepublicOfUzbekistan": "O'zbekiston Respublikasi, Toshkent Sh., 100027, Koratosh ko'chasi, 1",
-        "AllRightsReserved": "© 2024. Barcha huquqlar himoyalangan"
+        "AllRightsReserved": "© 2024. Barcha huquqlar himoyalangan",
+
+        "news1": "https://www.uba.uz/uz/press_center/news/",
+        "news2": "https://cbu.uz/uz/press_center/news/",
+        "news3": "https://gov.uz/uz/miit/news/news/",
+
+
+        "event1": "Ishtirokchilarni ro'yxatdan o'tkazish, ertalabki qahva",
+        "event2": "CBATS nomidan konferentsiya ishtirokchilariga kirish so’zi Moderator – Marat Baytokov",
+        "event3": "Baxtiyor Hamidov O'zbekiston banklari assotsiatsiyasi Bosh direktori",
+        "event4": "Zakir Nuriyev Ozarbayjon Banklari Assotsiatsiyasi Prezidenti",
+        "event441": "Ismoil Vural Turkiya ishtirokchi banklari Assotsiatsiyasining Bosh kotibi",
+        "event442": "Marat Baytokov Qozog'iston Banklari Assotsiatsiyasining Ijrochi Raisi",
+        "event443": "Anvar Abdrayev Qirg'iziston Banklari Assotsiatsiyasi Raisi",
+        "event444": "Alpaslan Chakar Turkiy Mamlakatlar Bank Uyushmalari Kengashi Raisi",
+        "event5": "Esdalik sovg'alari almashinuvi, umumiy fotosurat",
+
+        "event6": "1-Sessiya – FINTEX VA BANKLAR",
+        "event7": "Moderator-Otabek Nasirov, O'zbekiston FinTech assotsiatsiyasi raisining o'rinbosari",
+        "event8": "O'zbekiston bank tizimi qanday o'zgarishlarni kutmoqda Kseniya Konstantinova, Senteo xalqaro konsalting kompaniyasining Markaziy Osiyo va yaqin Sharq mintaqalaridagi direktori",
+        "tema2": "2-Mavzu ",
+        "event10": "Yunus Abdulov, Ozarbayjon banklari assotsiatsiyasi Ijrochi direktori ",
+        "tema3": "3-Mavzu ",
+        "event12": "Vulkan Guldurmez,  Ziraat Bank Uzbekistan boshqaruvi raisi",
+        "event13": "ABCDE Raqamli bank Orlando Kastellanos-innovatsiyalar bo'yicha Bosh direktor (CINO), NETinfo (Kipr)",
+        "coffeebreak": "Qahva tanaffusi",
+
+        "event15": "2-Sessiya –  RAQAMLI PUL VA BANKLAR",
+        "event16": "Moderator – ",
+        "event17": "Raqamli milliy valyutalarning Markaziy banklarning emissiya siyosatiga ta'siri Bank CenterCredit  AJ",
+        "event18": "O'zbekistonda raqamli pullarning Qonunchilik va tartibga solish asoslari  Ўзбекистон Республикаси Истиқболли Лойиҳалар Миллий Агентлиги",
+        "event19": "3-Mavzu <br/> Xamori Reka –  Vengriya banklari assotsiatsiyasi",
+        "event20": "4-Mavzu <br/> O’zbekiston banklari",
+        "lunch": "Tushlik",
+        
+        "event22": "3-Sessiya – ANTIFROD ",
+        "event23": "Moderator: Roman Korbut –  Biznesni rivojlantirish bo'yicha menejer",
+        "event24": "LexisNexis Risk Solutions",
+        "tema1": "1-Mavzu ",
+        "event26": "O'zbekiston Respublikasi Markaziy banki",
+        "event27": "To'lov tizimlari, provayderlar . (UzCard, Humo, PayMe и т.д.)",
+        "event28": "Zenon Amtmann – OTB Bank Vengriya",
+        "tema4": "4-Mavzu ",
+        "event30": "Roman Korbut –  Biznesni rivojlantirish bo'yicha menejer. LexisNexis Risk Solutions",
+        
+        "event31": "Сессия 4 – ISLOM BANKCHILIGINI OMMALASHTIRISH",
+        "event32": "Moderator – Fatma Chinar, Turkiya ishtirokchi banklari Assotsiatsiyasi",
+        "event33": "Islom moliyasini davlat va korporativ darajada targ'ib qilish va ommalashtirish yondashuvlari.",
+        "event34": "Merkulov Umidjon-IFAAS menejerining yordamchi xodimi (Islom moliya bo'yicha maslahat va kafolat xizmatlari)",
+        "event35": "Turkiy mamlakatlarda Islomiy moliyalashtirishni rivojlantirish Fatma Chinar, Turkiya ishtirokchi banklari Assotsiatsiyasi",
+        "event36": "3-Mavzu AlHuda CIBE",
+        "event37": "4-Mavzu O’zbekiston banklari",
+        "event38": "Yakuniy so'z, suratga olish"
     }
     
 }

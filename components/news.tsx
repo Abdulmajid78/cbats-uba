@@ -40,7 +40,7 @@ const News = () => {
 									</div>
 								
 								<div className='flex flex-col items-start w-full'>
-									<Link href="" target='_blank'>
+									<Link href={t("news1")} target='_blank'>
 										<Reveal y={40}>
 											<h1 className='font-bold text-xl pb-2 text-gray-800'>
 												something was something
@@ -55,7 +55,7 @@ const News = () => {
 									<Reveal y={40}>
 										<Link
 											className='flex gap-3 items-center group text-blue-500'
-											href=""
+											href={t("news1")}
 											target='_blank'
 										>
 											<p
@@ -93,7 +93,7 @@ const News = () => {
 									</div>
 								
 								<div className='flex flex-col items-start w-full'>
-									<Link href="" target='_blank'>
+									<Link href={t("news2")} target='_blank'>
 										<Reveal y={40}>
 											<h1 className='font-bold text-xl pb-2 text-gray-800'>
 												something was something
@@ -108,7 +108,7 @@ const News = () => {
 									<Reveal y={40}>
 										<Link
 											className='flex gap-3 items-center group text-blue-500'
-											href=""
+											href={t("news2")}
 											target='_blank'
 										>
 											<p
@@ -151,11 +151,13 @@ const News = () => {
 						/>
 					</Reveal>
 					<div className='flex flex-col items-start'>
+					<Link href={t("news3")} target='_blank'>
 						<Reveal y={40}>
 							<h1 className='font-bold text-xl pb-2'>
 								Registan Square in Samarkand saw over 1mn tourists in 2022
 							</h1>
 						</Reveal>
+					</Link>
 						<Reveal y={40}>
 							<p className='text-base pb-2'>
 								Samarkand was chosen as the 2023 World Tourism Capital at the
@@ -168,7 +170,7 @@ const News = () => {
 						<Reveal y={40}>
 							<Link
 								className='flex gap-3 items-center group text-blue-500 text-primary'
-								href='https://daryo.uz/en/2023/01/11/registan-square-in-samarkand-saw-over-1mn-tourists-in-2022'
+								href={t("news3")}
 								target='_blank'
 							>
 								<p

@@ -1,10 +1,10 @@
 'use client'
-import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import React from 'react'
 import Reveal from './reveal'
 
 const Partners = () => {
+
 	const logos: string[] = [
 		'logo1.jpg',
 		'logo2.jpg',
@@ -16,7 +16,7 @@ const Partners = () => {
 		'logo8.jpg',
 	]
 	return (
-		<section id='partners' className='container mb-10 scroll-mt-[100px] py-10'>
+		<section id='partners' className='bg-white container-fluid mb-10 scroll-mt-[100px] py-10'>
 			<div className='2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4 '>
 				<div className='w-full flex flex-col justify-center items-center'>
 					<div className='flex flex-col justify-center items-center text-center space-y-4'>
@@ -41,7 +41,7 @@ const Partners = () => {
 							</a>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
-							<a href="">
+							<a href="https://aba.az/">
 							<Image
 								width={0}
 								height={0}
@@ -53,6 +53,7 @@ const Partners = () => {
 							</a>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
+							<a href="https://abrk.kz/">
 							<Image
 								width={0}
 								height={0}
@@ -61,8 +62,10 @@ const Partners = () => {
 								alt='image'
 								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
+							</a>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
+							<a href="https://www.tkbb.org.tr/">
 							<Image
 								width={0}
 								height={0}
@@ -71,8 +74,10 @@ const Partners = () => {
 								alt='image'
 								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
+							</a>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
+							<a href="https://ub.kg/ru/">
 							<Image
 								width={0}
 								height={0}
@@ -81,6 +86,7 @@ const Partners = () => {
 								alt='image'
 								className='w-[170px] saturate-0 group-hover:saturate-100'
 							/>
+							</a>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
 							<a href="https://www.tbb.org.tr/tr">
