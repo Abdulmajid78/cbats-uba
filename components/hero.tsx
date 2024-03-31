@@ -17,7 +17,7 @@ const Hero = () => {
 			type: 'heading1',
 			text: t("Welcometo"),
 			className:
-				'md:text-3xl sm:text-[44px] text-4xl text-start text-gray-800',
+				'md:text-3xl sm:text-[44px] ,lg:text-4xl text-start text-gray-800',
 		},
 		{
 			type: 'heading1',

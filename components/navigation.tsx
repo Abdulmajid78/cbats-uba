@@ -76,13 +76,13 @@ const Navigation = () => {
 					/>
 				</Link>
 				{/* logo end */}
-				<div className="flex items-center gap-10">
+				<div className="flex items-center gap-5">
 					<ul className="lg:flex hidden text-white gap-6 items-center">
 						{navigationList.map(item => (
 							<li key={item.link}>
 								<Link
 									href={`/${item.link}`}
-									className="lg:text-2xl md:text-base cursor-pointer"
+									className="lg:text-2xl md:text-base font-serif cursor-pointer"
 								>
 									{item.name}
 								</Link>
@@ -90,26 +90,26 @@ const Navigation = () => {
 						))}
 						{/* contact */}
 						<Sheet>
-							<SheetTrigger className="text-white lg:text-2xl block text-lg">
+							<SheetTrigger className="text-white lg:text-2xl font-serif block text-lg">
 								{t("Contacts")}
 							</SheetTrigger>
 							<SheetContent className="!max-w-[600px] bg-white flex flex-col gap-10 p-20">
-								<h1 className="text-4xl mt-10">Contact Us</h1>
+								<h1 className="text-4xl mt-10">{t("ContactUs")}</h1>
 								<div className="text-xl">
 									<p>
-										<span className="font-bold">Phone number:</span> +998 78
+										<span className="font-bold">{t("Phone")}:</span> +998 78
 										147-77-77
 										<br />
 										+998 78 777-77-34
 									</p>
 									<br />
 									<p>
-										<span className="font-bold">Address:</span> Адрес: 100011,
-										Республика Узбекистан, г. Ташкент, ул. Навои, 38
+										<span className="font-bold">{t("Address")}:</span> 
+										{t("RepublicOfUzbekistan")}
 									</p>
 									<br />
 									<p>
-										<span className="font-bold">Email: </span>info@eastwest.com
+										<span className="font-bold">{t("Email")}: </span>info@eastwest.com
 									</p>
 
 									<div className='mt-14'>
@@ -129,10 +129,10 @@ const Navigation = () => {
 								</span>
 								<select defaultValue={localActive} 
 								// disabled={isPending}
-								 className='bg-transparent h-[30px] outline-none' onChange={onSelectChange}>
+								 className='navb-select bg-transparent h-[30px] outline-none font-serif' onChange={onSelectChange}>
 									<option className='text-black' value="en">EN</option>
 									<option className='text-black' value="uz">UZ</option>
-									<option className='text-black' value="ru">РУ</option>
+									<option className='text-black' value="ru">RU</option>
 								</select>
 								</p>
 							</div>
@@ -158,36 +158,40 @@ const Navigation = () => {
 							))}
 							<Sheet>
 								<SheetTrigger className="text-white block text-lg text-start cursor-pointer border-b border-white">
-									Contact
+									{t("Contacts")}
 								</SheetTrigger>
 								<SheetContent
 									className="sm:!max-w-[600px] !max-w-[400px] w-full bg-white flex flex-col gap-10 sm:p-20 p-10 overflow-y-scroll">
-									<h1 className="text-4xl mt-10">Contact Us</h1>
+									<h1 className="text-4xl mt-10">{t("ContactUs")}</h1>
 									<div className="text-xl">
 										<p>
-											<span className="font-bold">Phone number:</span> +998 78
+											<span className="font-bold">{t("Phone")}:</span> +998 78
 											147-90-90
 											<br />
 											+998 78 247-17-34
 										</p>
 										<br />
 										<p>
-											<span className="font-bold">Address:</span> Адрес: 100011,
-											Республика Узбекистан, г. Ташкент, ул. Навои, 38
+											<span className="font-bold">{t("Address")}:</span> 
+											{t("Address")}
 										</p>
 										<br />
 										<p>
-											<span className="font-bold">Email: </span>
+											<span className="font-bold">{t("Email")}: </span>
 											info@eastwest.com
 										</p>
 									</div>
 								</SheetContent>
 							</Sheet>
 						</nav>
-						<div className="flex gap-2">
-							<Button variant={'default'}>Russian</Button>
-							<Button variant={'default'}>English</Button>
-							<Button variant={'default'}>Uzbek</Button>
+						<div className="flex flex-row-reverse">
+						<select defaultValue={localActive} 
+						// disabled={isPending}
+							className='navb-select bg-transparent h-[30px] outline-none font-serif' onChange={onSelectChange}>
+							<option className='text-black' value="en">EN</option>
+							<option className='text-black' value="uz">UZ</option>
+							<option className='text-black' value="ru">RU</option>
+						</select>
 						</div>
 					</SheetContent>
 				</Sheet>

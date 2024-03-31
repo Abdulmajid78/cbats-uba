@@ -11,17 +11,6 @@ body {
 	padding: 0;
 }
 
-body {
-	/* background: right 10% / 120% 50% url(../public/images/main-bg.JPG); */
-	/* background-size: cover; */
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-clip: initial;
-	background-position: bottom;
-	background-position-x: 10px;
-	background-position-y: 921px;
-  }
-
 @layer base {
 	:root {
 		--background: #12312a00 /* white */;
@@ -153,3 +142,13 @@ ul.ToolbarWrapper-sc-exupb5-0 {
 .mydeailcard {
 	font-size: 18px;
 }
+
+select.navb-select option {
+	transition: 50%;
+	font-size: 16px;
+	width: 400px;
+	text-align:center;
+	margin: 12px;
+}
+
+

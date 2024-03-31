@@ -5,6 +5,7 @@ import React from 'react'
 import Reveal from './reveal'
 import { Chrono } from "react-chrono";
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 const Events = () => {
 
 	const [isClient, setIsClient] = useState(false);
@@ -107,6 +108,11 @@ const Events = () => {
 
 	return (
 		<section id='events' className='container-fluid mb-32 scroll-mt-[180px]'>
+			{/* <Image
+			width={100}
+			height={100}
+			className='w-full absolute'
+			src="/images/ubabuilding.png" alt="" /> */}
 			<Reveal>
 				<div className='w-2/3 text-center mx-auto'>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>

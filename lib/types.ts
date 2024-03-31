@@ -4,22 +4,6 @@ export type navigationListType = {
 	link: string
 }
 
-
-export type DataParams = {
-	apiKey: string
-	pageSize: number
-	page: number
-	query?: string
-	language?: 'en' | 'ru' | 'uz'
-	sources: string
-}
-
-export interface Root {
-	status: string
-	totalResults: number
-	articles: Article[]
-}
-
 export interface Article {
 	source: Source
 	author: any
