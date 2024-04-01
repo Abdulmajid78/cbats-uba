@@ -160,7 +160,7 @@ const News = () => {
 						</Reveal>
 					</Link>
 						<Reveal y={40}>
-							<p className='text-base pb-2 text-gray-600'>
+							<p className='text-base text-serif pb-2 text-gray-600'>
 									{t("news3little")}
 							</p>
 						</Reveal>
