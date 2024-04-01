@@ -57,7 +57,7 @@ const Speakers = () => {
                 </div>
             </Reveal>
 
-            <div className='bg-[#F5F7F8] w-full py-32 rounded-xl overflow-hidden flex gap-8 items-center p-10'>
+            <div className='bg-[#F5F7F8] w-full xl:py-32 py-24 rounded-xl overflow-hidden flex gap-8 items-center p-10'>
                 <div className='text-center w-full flex flex-col gap-2'>
                 {isClient && (
                     <AliceCarousel

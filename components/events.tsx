@@ -91,7 +91,7 @@ const Events = () => {
 
 
 	return (
-		<section id='events' className='container-fluid mb-32 relative scroll-mt-[180px]'>
+		<section id='events' className='container-fluid mb-32 mt-24 lg:mt-0 relative scroll-mt-[180px]'>
 			<Image
 			width={700}
 			height={700}
@@ -99,11 +99,11 @@ const Events = () => {
 			className='w-full object-contain  z-[-50] top-[190px] absolute'
 			src="/images/header__bg.webp" alt="" />
 			<Reveal>
-				<div className='w-2/3 text-center mx-auto'>
-					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
+				<div className='xl:w-2/3 text-center mx-auto'>
+					<h1 className='text-2xl lg:text-3xl leading-9 md:leading-7 lg:leading-9 text-gray-800 font-serif font-bold text-center'>
 						{t("financee")}
 					</h1>
-					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
+					<h1 className='text-2xl lg:text-3xl leading-9 md:leading-7 lg:leading-9 text-gray-800 font-serif font-bold mb-10 text-center'>
 						{t("date")}</h1>
 				<h1 className='text-3xl lg:text-4xl leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
 					{t("EventProgram")}

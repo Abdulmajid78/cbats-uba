@@ -18,7 +18,7 @@ const t = useTranslations("Index")
 			<ScrollUp />
 			<section
 				id='about'
-				className='mb-0 mx-40 container-fluid flex flex-col justify-center scroll-mt-[290px]'
+				className='mb-10 xl:mb-0 lg:mx-40 mx-5 container-fluid flex flex-col justify-center scroll-mt-[290px]'
 			>
 				{/* <Reveal>
 					<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 font-vinnytsia mb-10 text-center'>
@@ -27,7 +27,7 @@ const t = useTranslations("Index")
 				</Reveal> */}
 				<div className='rounded-xl w-full flex md:flex-row flex-col gap-5 mb-20 items-center'>
 					
-					<div className='xl:w-3/6 w-full'>
+					<div className='lg:w-3/6 w-full'>
 						<Image
 							src='/images/top.png'
 							alt='news image'

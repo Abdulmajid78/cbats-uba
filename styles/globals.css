@@ -88,6 +88,22 @@ body {
 	}
 }
 
+@media (max-width: 456px) {
+	.news {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.news-image {
+		width: 100% !important;
+	}
+	.news-item {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+}
+
 #timeline-main-wrapper > .TimelineMain-sc-cif21b-2 {
 	width: 100%!important;
 	margin: auto!important;

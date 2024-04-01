@@ -15,7 +15,7 @@ const News = () => {
 	const t = useTranslations("Index")
 
 	return (
-		<section id='news' className='container-fluid  bg-white scroll-mt-[110px] pt-8'>
+		<section id='news' className='container-fluid bg-white scroll-mt-[110px] pt-8'>
 			<Reveal>
 				<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 font-vinnytsia mb-5 text-center'>
 					{t("NEWS")}
@@ -133,7 +133,7 @@ const News = () => {
 				</div>
 
 
-				<div className='p-5 grid grid-cols-news gap-5 rounded-xl border bg-card text-card-foreground card shadow-none'>
+				<div className='p-5 grid grid-cols-news gap-5 rounded-xl border bg-card new3-item text-card-foreground card shadow-none'>
 					<Reveal
 						slideControl={true}
 						mainControl={false}
@@ -146,7 +146,7 @@ const News = () => {
 							width={360}
 							height={225}
 							sizes='100%'
-							className='rounded-sm object-cover w-[332px] h-[477px]'
+							className='rounded-sm object-cover xl:w-[332px] w-64 xl:h-[477px]'
 							priority={true}
 							quality={100}
 						/>
