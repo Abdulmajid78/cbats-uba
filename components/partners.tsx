@@ -21,7 +21,7 @@ const Partners = () => {
 				<div className='w-full flex flex-col justify-center items-center'>
 					<div className='flex flex-col justify-center items-center text-center space-y-4'>
 						<Reveal>
-							<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800'>
+							<h1 className='text-3xl lg:text-4xl font-serif font-bold leading-9 md:leading-7 lg:leading-9 text-gray-800'>
 								CBATS
 							</h1>
 						</Reveal>

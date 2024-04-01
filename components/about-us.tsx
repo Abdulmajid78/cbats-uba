@@ -42,7 +42,7 @@ const t = useTranslations("Index")
 				
 				{/* p */}
 					<div className='flex flex-col h-[360px] w-full xl:w-3/5 mx-2'>
-					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
+					<h1 className='text-2xl lg:text-3xl font-serif font-bold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
 							{t("ABOUTCBATS")}
 							</h1>
 							<Reveal>

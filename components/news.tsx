@@ -17,7 +17,7 @@ const News = () => {
 	return (
 		<section id='news' className='container-fluid bg-white scroll-mt-[110px] pt-8'>
 			<Reveal>
-				<h1 className='text-3xl lg:text-4xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 font-vinnytsia mb-5 text-center'>
+				<h1 className='text-3xl lg:text-4xl font-serif font-bold leading-9 md:leading-7 lg:leading-9 text-gray-800  mb-5 text-center'>
 					{t("NEWS")}
 				</h1>
 			</Reveal>
@@ -45,7 +45,7 @@ const News = () => {
 						<div className='flex flex-col justify-between items-start w-full'>
 							<Link href={t("news1")} target='_blank'>
 								<Reveal y={40}>
-									<h1 className='font-bold text-xl pb-2 text-gray-800'>
+									<h1 className='font-bold font-serif text-xl pb-2 text-gray-800'>
 										{t("news1inside")}
 									</h1>
 								</Reveal>
@@ -100,7 +100,7 @@ const News = () => {
 						<div className='flex flex-col justify-between items-start w-full'>
 							<Link href={t("news2")} target='_blank'>
 								<Reveal y={40}>
-									<h1 className='font-bold text-xl pb-2 text-gray-800'>
+									<h1 className='font-bold font-serif text-xl pb-2 text-gray-800'>
 										{t("news2inside")}
 									</h1>
 								</Reveal>
@@ -154,12 +154,16 @@ const News = () => {
 					<div className='flex flex-col justify-between items-start'>
 					<Link href={t("news3")} target='_blank'>
 						<Reveal y={40}>
-							<h1 className='font-bold text-xl pb-2'>
+							<h1 className='font-bold font-serif text-xl pb-2'>
 										{t("news3inside")}
 							</h1>
 						</Reveal>
 					</Link>
-						
+						<Reveal y={40}>
+							<p className='text-base pb-2 text-gray-600'>
+									{t("news3little")}
+							</p>
+						</Reveal>
 						<Reveal y={40}>
 							<Link
 								className='flex gap-3 items-center group text-blue-500 text-primary'

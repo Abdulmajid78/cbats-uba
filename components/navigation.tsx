@@ -105,8 +105,8 @@ const Navigation = () => {
 									</p>
 									<br />
 									<p>
-										<span className="font-bold">{t("Address")}:</span> 
-										{t("RepublicOfUzbekistan")}
+										<span className="font-bold">{t("Address")}: </span> 
+											{t("RepublicOfUzbekistan")}
 									</p>
 									<br />
 									<p>
