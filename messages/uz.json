@@ -1,16 +1,16 @@
 {
     "Index": {
-        "Events": "Tadbirlar",
+        "Events": "Konferensiya",
         "Speakers": "Ma'ruzachilar",
         "Registration": "Registratsiya",
         "Partners": "Hamkorlar",
         "News": "Yangiliklar",
-        "Contacts": "Aloqalar",
+        "Contacts": "Aloqa",
         
         "Welcometo": "Xush kelibsiz",
         "FinanceTrends": "Moliya tendentsiyalari - FinTech va banklar, antifrod, Islom bankini ommalashtirish.     May 7, 2024",
         "ConferenceWebsite": "O'zbekiston banklari Assotsiatsiyasi tomonidan CBATS bilan hamkorlikda tashkil etilgan konferensiya veb-saytiga. ",
-        "TheConferenceIs": "Konferentsiya ajoyib muloqot maydonchasi bo'lib, dolzarb masalalarni muhokama qilish va xalqaro ilg'or tajribalarni almashish uchun ajoyib imkoniyat yaratadi.",
+        "TheConferenceIs": "Konferentsiya ajoyib muloqot maydonchasi bo'lib, dolzarb masalalarni muhokama qilish va xalqaro ilg'or     tajribalarni almashish uchun ajoyib imkoniyat yaratadi.",
     
         "ABOUTCBATS": "CBATS HAQIDA",
         "TheCouncilOf": "Turkiy davlatlar banklar assotsiatsiyalari Kengashi a'zo bank birlashmalari o'rtasidagi hamkorlikni rivojlantirish, bankirlar va ishbilarmonlarning talablarini to'g'ri baholash, bank sektorini rivojlantirish, real sektor va milliy iqtisodiyot uchun ijobiy natijalar ishlab chiqarish, sohaga oid masalalar va yechimlar bo'yicha maslahatlashib tajriba almashish maqsadida faoliyat yuritadi.",
@@ -23,13 +23,14 @@
         "EventProgram": "Tadbir programmasi",
         "OURSPEAKERS": "BIZNING MA'RUZACHILARIMIZ",
     
-        "RegistrateNow": "Hozir ro'yxatdan o'tish",
+        "RegistrateNow": "Ro'yxatdan o'tish",
         "CompanyName": "Kompaniya nomi",
-        "FullName": "To'liq ism",
+        "FullName": "FIO",
         "Phone": "Telefon raqami",
         "SendInfo": "Ma'lumot yuborish",
+        "emai": "E - mail",
     
-        "NEWS": "Yangiliklar",
+        "NEWS": "YANGILIKLAR",
     
         "Social": "Ijtimoiy sahifalar",
         "ContactUs": "Aloqa",
@@ -41,6 +42,11 @@
         "news1": "https://www.uba.uz/uz/press_center/news/",
         "news2": "https://cbu.uz/uz/press_center/news/",
         "news3": "https://gov.uz/miit/news/news/",
+
+
+        "news1inside": "O'zbekiston banklari tomonidan 46 milliondan ortiq plastik kartalar ishlab chiqarilgan",
+        "news2inside": "Markaziy bankning korruptsiyaga qarshi kurashishdagi faoliyati samaradorligi yuqori baholandi",
+        "news3inside": "O‘zbekiston-Germaniya hamkorligining o‘sish sur’atlari ko‘rib chiqildi",
 
 
         "event1": "Ishtirokchilarni ro'yxatdan o'tkazish, ertalabki qahva",

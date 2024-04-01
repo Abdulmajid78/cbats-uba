@@ -63,7 +63,7 @@ const Navigation = () => {
 			${
                 scrollHeight > 0 ? 'h-32' : 'h-56'
             }`}		>
-			<div className="container py-2 flex justify-between items-center">
+			<div className="container-fluid mx-48 flex justify-between items-center">
 				{/* logo start */}
 				<Link
 					href="/"
@@ -101,10 +101,7 @@ const Navigation = () => {
 								<h1 className="text-4xl mt-10">{t("ContactUs")}</h1>
 								<div className="text-xl">
 									<p>
-										<span className="font-bold">{t("Phone")}:</span> +998 78
-										147-77-77
-										<br />
-										+998 78 777-77-34
+										<span className="font-bold">{t("Phone")}:</span> +998 71 238-69-61
 									</p>
 									<br />
 									<p>
@@ -113,7 +110,8 @@ const Navigation = () => {
 									</p>
 									<br />
 									<p>
-										<span className="font-bold">{t("Email")}: </span>info@eastwest.com
+										<span className="font-bold">{t("Email")}: </span>
+										office@uba.uz
 									</p>
 
 									<div className='mt-14'>
@@ -123,6 +121,8 @@ const Navigation = () => {
 								</div>
 							</SheetContent>
 						</Sheet>
+
+
 					</ul>
 					<Menubar className="lg:block hidden">
 						<MenubarMenu>
@@ -195,20 +195,18 @@ const Navigation = () => {
 									<h1 className="text-4xl mt-10">{t("ContactUs")}</h1>
 									<div className="text-xl">
 										<p>
-											<span className="font-bold">{t("Phone")}:</span> +998 78
-											147-90-90
-											<br />
-											+998 78 247-17-34
+											<span className="font-bold">{t("Phone")}:</span> 
+											+99871 238-69-61 
 										</p>
 										<br />
 										<p>
 											<span className="font-bold">{t("Address")}:</span> 
-											{t("Address")}
+											{t("RepublicOfUzbekistan")}
 										</p>
 										<br />
 										<p>
 											<span className="font-bold">{t("Email")}: </span>
-											info@eastwest.com
+											<a href="mailto:office@uba.uz">office@uba.uz</a>
 										</p>
 									</div>
 								</SheetContent>

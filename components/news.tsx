@@ -46,7 +46,7 @@ const News = () => {
 							<Link href={t("news1")} target='_blank'>
 								<Reveal y={40}>
 									<h1 className='font-bold text-xl pb-2 text-gray-800'>
-									O‘zbekiston banklari Assotsiatsiyasiga beriladigan eng ko‘p savollarning asosi kredit tarixi bilan bog‘liqdir
+										{t("news1inside")}
 									</h1>
 								</Reveal>
 							</Link>
@@ -101,7 +101,7 @@ const News = () => {
 							<Link href={t("news2")} target='_blank'>
 								<Reveal y={40}>
 									<h1 className='font-bold text-xl pb-2 text-gray-800'>
-										Markaziy bankning korruptsiyaga qarshi kurashishdagi faoliyati samaradorligi yuqori baholandi
+										{t("news2inside")}
 									</h1>
 								</Reveal>
 							</Link>
@@ -155,7 +155,7 @@ const News = () => {
 					<Link href={t("news3")} target='_blank'>
 						<Reveal y={40}>
 							<h1 className='font-bold text-xl pb-2'>
-							ISSV Oʻzbekiston eksportchilarini toʻgʻridan-toʻgʻri qoʻllab-quvvatlash boʻyicha davra suhbatlari tashkil etmoqda
+										{t("news3inside")}
 							</h1>
 						</Reveal>
 					</Link>

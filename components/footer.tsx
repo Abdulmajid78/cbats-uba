@@ -78,16 +78,16 @@ const Footer = () => {
 					<h3 className='text-xl mb-3'>{t("ContactUs")}</h3>
 					<ul className='flex flex-col gap-2 text-base w-full'>
 						<li>
-							<span className='font-bold'>{t("Address")}: </span>
+							<span className='font-bold font-serif'>{t("Address")}: </span>
 								{t("RepublicOfUzbekistan")}
 						</li>
 						<div className='flex gap-3'>
 							<li>
-								<span className='font-bold'>Phone: </span>+99871 238-69-61
+								<span className='font-bold font-serif'>{t("Phone")}: </span>+99871 238-69-61
 								&nbsp;
 							</li>
 							<li>
-								<span className='font-bold'>{t("Email")}:</span>{' '}
+								<span className='font-bold font-serif'>{t("Email")}:</span>{' '}
 								<a href="mailto:office@uba.uz">office@uba.uz</a>
 							</li>
 						</div>
@@ -99,7 +99,7 @@ const Footer = () => {
 						{t("AllRightsReserved")}
 					</p>
 					<p className="text-white">
-						Created by UTF | Unique Future Tecnology
+						Created by UFT | Unique Future Tecnology
 					</p>
 				</div>
 			</div>

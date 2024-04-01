@@ -57,7 +57,7 @@ const Speakers = () => {
         <section id='speakers' className='container-fluid mb-32 scroll-mt-[255px]'>
             <Reveal>
                 <div className='w-2/3 text-center mx-auto'>
-                    <h1 className='text-2xl my-5 lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
+                    <h1 className='text-2xl my-5 lg:text-3xl font-semibold font-bold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
                         {t("OURSPEAKERS")}
                     </h1>
                 </div>

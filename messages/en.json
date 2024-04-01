@@ -28,6 +28,7 @@
         "FullName": "Full name",
         "Phone": "Phone",
         "SendInfo": "Send info",
+        "emai": "E - mail",
 
         "NEWS": "NEWS",
 
@@ -41,6 +42,10 @@
         "news1": "https://www.uba.uz/en/press_center/news/",
         "news2": "https://cbu.uz/en/press_center/news/",
         "news3": "https://gov.uz/en/miit/news/news/",
+
+        "news1inside": "Uzbekistan's banks have issued more than 46 million plastic cards",
+        "news2inside": "We highly appreciate the effectiveness of the Central Bank's activities to ensure openness",
+        "news3inside": "The current dynamics of Uzbek-German cooperation were discussed",
 
 
         "event1": "Registration of participants, morning coffee",

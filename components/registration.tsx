@@ -84,7 +84,7 @@ const RegistrationComponent: React.FC = () => {
 
 										<Input
 											id="email"
-											placeholder="name@example.com"
+											placeholder={t("emai")}
 											type="email"
 											name='Email'
 											autoCapitalize="none"
