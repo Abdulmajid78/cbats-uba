@@ -20,7 +20,7 @@ const Events = () => {
 			{
 				title: "9:30-10:45",
 				cardDetailedText: (
-					<div className='mydeailcard p-6'>
+					<span className='mydeailcard p-6'>
 						9.30-10.00 {t("event1")} <br/>
 						{t("event2")}
 						<br />
@@ -31,52 +31,52 @@ const Events = () => {
 						10.20-10.25 {t("event443")} <br />
 						10.25-10.30 {t("event444")} <br />
 						10.30-10.45 {t("event5")}
-					</div>
+					</span>
 				),
 			},
 			{
 				title: "10:45-12:00",
 				cardDetailedText: (
-					<div className='mydeailcard p-6'>
+					<span className='mydeailcard p-6'>
 						{t("event6")} <br />{t("event7")}<br />
 						10.45-11.00 {t("event8")} <br />
 						11.00-11.15 <br />{t("tema2")} <br />{t("event10")}<br />
 						{t("tema3")} <br /> {t("event12")} <br />
 						11.30-11.45 {t("event13")} <br />
 						11.45-12.00 {t("coffeebreak")}
-					</div>
+					</span>
 				),
 			},
 			{
 				title: "12:00-14:00",
 				cardDetailedText: (
-							<div className='mydeailcard p-6'>
+							<span className='mydeailcard p-6'>
 								{t("event15")} <br />{t("event16")} <br />
 								12.00-12.15  {t("event17")}<br />
 								12.15-12.30 {t("event18")} <br />
 								12.30-12.45 {t("event19")} <br />
 			 					12.45-13.00 {t("event20")}<br />
 								13.00-14.00 {t("lunch")}
-			 				</div>
+			 				</span>
 						),
 			},
 			{
 				title: "14:00-15:30",
 				cardDetailedText: (
-					<div className='mydeailcard p-6'>
+					<span className='mydeailcard p-6'>
 						{t("event22")} <br /> {t("event23")} <br /> {t("event24")}<br />
 						14.00-14.15 {t("tema1")} <br />  {t("event26")} <br />
 						14.15-14.30 {t("tema2")} <br /> {t("event27")} <br /> 
 						14.30-14.45 {t("tema3")} <br /> {t("event28")} <br />
 						14.45-15.00 {t("tema4")} <br /> {t("event30")} <br />
 						15.00-15.30 {t("coffeebreak")}
-					</div>
+					</span>
 						),
 			},
 					{
 				title: "15:30-17:30",
 				cardDetailedText: (
-					<div className='mydeailcard p-6'>
+					<span className='mydeailcard p-6'>
 						{t("event31")}<br /> {t("event32")} <br />
 						15.30-15.45 {t("event33")} <br />
 						{t("event34")} merkulov or yorqulov <br /> 
@@ -84,26 +84,27 @@ const Events = () => {
 						16.00-16.15 {t("event36")} <br />
 						16.15-16.30 {t("event37")} <br />
 						17.00-17.30 {t("event38")}
-					</div>
+					</span>
 				),
 			}, 
 		]
 
 
 	return (
-		<section id='events' className='container-fluid mb-32 scroll-mt-[180px]'>
+		<section id='events' className='container-fluid mb-32 relative scroll-mt-[180px]'>
 			<Image
 			width={700}
 			height={700}
-			className='w-full opacity-50 z-[-50] absolute'
-			src="/images/ubabuilding.webp" alt="" />
+			quality={100}
+			className='w-full object-contain  z-[-50] top-[190px] absolute'
+			src="/images/header__bg.webp" alt="" />
 			<Reveal>
 				<div className='w-2/3 text-center mx-auto'>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
 						{t("financee")}
 					</h1>
 					<h1 className='text-2xl lg:text-3xl font-semibold leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
-						May 7, 2024</h1>
+						{t("date")}</h1>
 				<h1 className='text-3xl lg:text-4xl leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
 					{t("EventProgram")}
 				</h1>

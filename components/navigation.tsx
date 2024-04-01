@@ -1,18 +1,22 @@
 'use client'
 import Image from 'next/image'
 import React, { useState, useEffect, ChangeEvent } from 'react'
-import { Button } from './ui/button'
 import Link from 'next/link'
 import { FiMenu } from 'react-icons/fi'
 import { MdOutlineLanguage } from 'react-icons/md'
 import {
 	Menubar,
 	MenubarMenu,
+	MenubarTrigger,
+	MenubarContent
 } from '@/components/ui/menubar'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from './ui/sheet'
 import { navigationListType } from '../lib/types';
 import { useRouter } from 'next/navigation'
 import { useLocale, useTranslations } from 'next-intl'
+import { RiArrowDropDownLine } from 'react-icons/ri'
+import { MenubarItem } from '@radix-ui/react-menubar'
+import { cn } from '@/lib/utils'
 
 
 const Navigation = () => {
@@ -26,7 +30,7 @@ const Navigation = () => {
 		{ name: t('Partners'), link: '#partners' },
 		{ name: t('News'), link: '#news' },
 	]
-	
+
 	
 
 	// const [isPending, startTransition] = useTranslations();
@@ -122,20 +126,46 @@ const Navigation = () => {
 					</ul>
 					<Menubar className="lg:block hidden">
 						<MenubarMenu>
-							<div>
-								<p className='lg:text-2xl bg-red md:text-base flex gap-1 items-center text-white'>
-								<span>
-									<MdOutlineLanguage />
-								</span>
-								<select defaultValue={localActive} 
-								// disabled={isPending}
-								 className='navb-select bg-transparent h-[30px] outline-none font-serif' onChange={onSelectChange}>
-									<option className='text-black' value="en">EN</option>
-									<option className='text-black' value="uz">UZ</option>
-									<option className='text-black' value="ru">RU</option>
-								</select>
+							
+
+<Menubar className='lg:block hidden'>
+						<MenubarMenu>
+							<MenubarTrigger className='h-[30px] outline-none'>
+								<p className='lg:text-2xl md:text-base  flex gap-1 items-center text-white font-serif'>
+									<span>
+										<MdOutlineLanguage />
+									</span>
+									{localActive === 'en' ? 'EN' : localActive === 'ru' ? 'РУ' : 'O\'Z'}
+									<span className={cn('scale-150 transition-all')}>
+										<RiArrowDropDownLine />
+									</span>
 								</p>
-							</div>
+							</MenubarTrigger>
+							<MenubarContent className='min-w-[70px] text-center'>
+    <MenubarItem
+        onClick={() => onSelectChange({ target: { value: 'en' } } as React.ChangeEvent<HTMLSelectElement>)}
+        className='flex gap-2 text-lg px-5 cursor-pointer'
+    >
+        EN
+    </MenubarItem>
+    <MenubarItem
+        onClick={() => onSelectChange({ target: { value: 'ru' } } as React.ChangeEvent<HTMLSelectElement>)}
+        className='flex gap-2 text-lg px-5 cursor-pointer'
+    >
+        РУ
+    </MenubarItem>
+    <MenubarItem
+        onClick={() => onSelectChange({ target: { value: 'uz' } } as React.ChangeEvent<HTMLSelectElement>)}
+        className='flex gap-2 text-lg px-5 cursor-pointer'
+    >
+        O'z
+    </MenubarItem>
+</MenubarContent>
+						</MenubarMenu>
+					</Menubar>
+
+
+
 						</MenubarMenu>
 					</Menubar>
 				</div>

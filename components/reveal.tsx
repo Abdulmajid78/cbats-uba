@@ -69,7 +69,7 @@ const Reveal = ({
 					whileInView='visible'
 					transition={{ duration: 1, ease: 'easeInOut', delay: 0.5 }}
 					className='absolute top-0 bottom-0 left-0 right-0 backdrop-blur-sm z-20 w-full flex flex-col justify-center items-center p-10 rounded-xl'
-					style={{ backgroundColor: 'rgb(4 33 26 / 80%)' }}
+					style={{ backgroundColor: 'rgb(0 173 255 / 40%)' }}
 				>
 					<Image
 						src='/images/logo.png'
@@ -106,7 +106,7 @@ const Reveal = ({
 					initial='hidden'
 					whileInView='visible'
 					transition={{ duration: 1, ease: 'easeInOut', delay: 0.5 }}
-					className='absolute top-0 bottom-0 left-0 right-0 backdrop-blur-sm z-20 bg-no-repeat bg-[#daaf71] bg-[length:270px_100%] bg-left'
+					className='absolute top-0 bottom-0 left-0 right-0 backdrop-blur-sm z-20 bg-no-repeat bg-[rgb(0 173 255 / 40%)] bg-[length:270px_100%] bg-left'
 					style={{
 						backgroundImage: `url(images/glitter.png)`,
 						backgroundColor: 'rgb(0 173 255 / 40%)',

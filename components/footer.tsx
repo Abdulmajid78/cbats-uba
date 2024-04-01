@@ -12,7 +12,7 @@ const Footer = () => {
 	return (
 		<footer
 		style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
-		className='bg-secondary w-full mt-4 py-10 backdrop-blur-sm'
+		className='bg-secondary w-full mt-4 py-8 backdrop-blur-sm'
 		>
 			<div className='container flex justify-between sm:flex-row flex-col gap-5'>
 				<div className='text-white w-40'>
@@ -78,7 +78,7 @@ const Footer = () => {
 					<h3 className='text-xl mb-3'>{t("ContactUs")}</h3>
 					<ul className='flex flex-col gap-2 text-base w-full'>
 						<li>
-							<span className='font-bold'>{t("Address")}:</span>
+							<span className='font-bold'>{t("Address")}: </span>
 								{t("RepublicOfUzbekistan")}
 						</li>
 						<div className='flex gap-3'>

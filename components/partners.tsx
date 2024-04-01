@@ -16,7 +16,7 @@ const Partners = () => {
 		'logo8.jpg',
 	]
 	return (
-		<section id='partners' className='bg-white container-fluid mb-10 scroll-mt-[100px] py-10'>
+		<section id='partners' className='bg-white container-fluid  scroll-mt-[100px] py-10'>
 			<div className='2xl:mx-auto 2xl:container py-12 lg:px-20 md:px-6 px-4 '>
 				<div className='w-full flex flex-col justify-center items-center'>
 					<div className='flex flex-col justify-center items-center text-center space-y-4'>
