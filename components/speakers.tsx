@@ -4,17 +4,18 @@ import Reveal from './reveal';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 
 const speakers = [
-    { name: 'Speaker 1', image: './images/user-picture.png' },
-    { name: 'Speaker 2', image: './images/user-picture.png' },
-    { name: 'Speaker 3', image: './images/user-picture.png' },
-    { name: 'Speaker 4', image: './images/user-picture.png' },
-    { name: 'Speaker 5', image: './images/user-picture.png' },
-    { name: 'Speaker 6', image: './images/user-picture.png' },
-    { name: 'Speaker 7', image: './images/user-picture.png' },
-    { name: 'Speaker 8', image: './images/user-picture.png' },
+    { name: 'Speaker 1', image: '/images/user-picture.png' },
+    { name: 'Speaker 2', image: '/images/user-picture.png' },
+    { name: 'Speaker 3', image: '/images/user-picture.png' },
+    { name: 'Speaker 4', image: '/images/user-picture.png' },
+    { name: 'Speaker 5', image: '/images/user-picture.png' },
+    { name: 'Speaker 6', image: '/images/user-picture.png' },
+    { name: 'Speaker 7', image: '/images/user-picture.png' },
+    { name: 'Speaker 8', image: '/images/user-picture.png' },
 ];
 
 const responsive = {
@@ -40,7 +41,12 @@ const Speakers = () => {
 
     const items = speakers.map((speaker, index) => (
         <div key={index} className='speaker-item'>
-            <img className='w-40 mx-auto' src={speaker.image} alt={speaker.name} role="presentation" />
+            <Image 
+                width={100}
+                height={100}
+                className='w-40 mx-auto' 
+                src={speaker.image} 
+                alt={speaker.name} role="presentation" />
             <p className='text-sm mt-3 text-center'>{speaker.name}</p>
         </div>
     ));

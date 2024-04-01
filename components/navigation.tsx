@@ -158,7 +158,7 @@ const Navigation = () => {
         onClick={() => onSelectChange({ target: { value: 'uz' } } as React.ChangeEvent<HTMLSelectElement>)}
         className='flex gap-2 text-lg px-5 cursor-pointer'
     >
-        O'z
+        {"O\'z"}
     </MenubarItem>
 </MenubarContent>
 						</MenubarMenu>
