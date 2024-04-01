@@ -63,7 +63,7 @@ const Navigation = () => {
 			${
                 scrollHeight > 0 ? 'h-32' : 'h-56'
             }`}		>
-			<div className="container-fluid mx-48 flex justify-between items-center">
+			<div className="container-fluid lg:mx-48 my-5 md:my-0 flex justify-between items-center">
 				{/* logo start */}
 				<Link
 					href="/"
