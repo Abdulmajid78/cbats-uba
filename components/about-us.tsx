@@ -29,7 +29,7 @@ const t = useTranslations("Index")
 					
 					<div className='lg:w-3/6 w-full'>
 						<Image
-							src='/images/top.png'
+							src='/images/top.webp'
 							alt='news image'
 							width={0}
 							height={0}
