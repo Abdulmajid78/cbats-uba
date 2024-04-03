@@ -9,10 +9,28 @@ import Image from 'next/image';
 const Events = () => {
 
 	const [isClient, setIsClient] = useState(false);
+	const [scrollHeight, setScrollHeight] = useState(0);
+
 
       useEffect(() => {
-        setIsClient(true); // Component has mounted, update state to trigger re-render   
+        setIsClient(true); // Component has mounted, update state to trigger re-render 
+		
+		const handleScroll = () => {
+            const scrolled = window.scrollY;
+            setScrollHeight(scrolled);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+		
 }, []);
+
+	
+
+   
 
 	const t = useTranslations("Index")
 
@@ -91,7 +109,9 @@ const Events = () => {
 
 
 	return (
-		<section id='events' className='container-fluid mb-32 mt-24 lg:mt-0 relative scroll-mt-[180px]'>
+		<section id='events' className={`container-fluid mb-32 mt-24 lg:mt-0 relative ${
+			scrollHeight > 0 ? 'scroll-mt-[180px]' : 'scroll-mt-[267px]'
+		}`}		>
 			<Image
 			width={700}
 			height={700}
