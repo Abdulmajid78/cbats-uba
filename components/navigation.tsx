@@ -25,7 +25,7 @@ const Navigation = () => {
 
 	const navigationList: navigationListType[] = [
 		{ name: t('Events'), link: '#events' },
-		{ name: t('Speakers'), link: '#speakers' },
+		// { name: t('Speakers'), link: '#speakers' },
 		{ name: t('Registration'), link: '#registration' },
 		{ name: t('Partners'), link: '#partners' },
 		{ name: t('News'), link: '#news' },

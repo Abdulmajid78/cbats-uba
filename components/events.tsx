@@ -96,7 +96,7 @@ const Events = () => {
 			width={700}
 			height={700}
 			quality={100}
-			className='w-full object-contain  z-[-50] top-[190px] absolute'
+			className='w-full h-[2000px] object-contain z-[-50] top-[190px] absolute'
 			src="/images/header__bg.webp" alt="" />
 			<Reveal>
 				<div className='xl:w-2/3 text-center mx-auto'>
@@ -130,14 +130,14 @@ const Events = () => {
 						}}
 						/>
       			)}	
-					<div className='hidden flex items-center justify-center gap-2'>
-						<button className="bg-sky-600 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+					<div className=' flex items-center justify-center gap-2'>
+						<button className=" hidden bg-sky-600 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
 							See gallery
 						</button>
-						<button className="bg-sky-600 flex items-center hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+						<a href={t("buttonLink")} target='_blank' className="flex items-center hover:bg-blue-100 text-sky-600 font-normal py-2 px-4 rounded">
 						<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-						Download full programm
-						</button>
+						{t("button")}
+						</a>
 					</div> 
 				</div>
 			</div>
