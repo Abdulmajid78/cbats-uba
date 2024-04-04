@@ -63,7 +63,7 @@ const Navigation = () => {
 			${
                 scrollHeight > 0 ? 'h-32' : 'h-56'
             }`}		>
-			<div className="container-fluid lg:mx-48 my-5 md:my-0 flex justify-between items-center">
+			<div className="container-fluid lg:mx-48 my-1 md:my-0 flex justify-between items-center">
 				{/* logo start */}
 				<Link
 					href="/"
@@ -74,7 +74,7 @@ const Navigation = () => {
 						width="0"
 						height="0"
 						sizes="100vw"
-						className="w-auto h-30 mb-1"
+						className="w-auto h-30 xl:h-36 mb-1"
 						alt="hero image"
 						priority={true}
 					/>
@@ -131,7 +131,7 @@ const Navigation = () => {
 <Menubar className='lg:block hidden'>
 						<MenubarMenu>
 							<MenubarTrigger className='h-[30px] outline-none'>
-								<p className='lg:text-2xl md:text-base  flex gap-1 items-center text-white font-serif'>
+									<p className='lg:text-2xl md:text-base  flex gap-1 items-center text-white font-serif'>
 									<span>
 										<MdOutlineLanguage />
 									</span>
@@ -142,25 +142,25 @@ const Navigation = () => {
 								</p>
 							</MenubarTrigger>
 							<MenubarContent className='min-w-[70px] text-center'>
-    <MenubarItem
-        onClick={() => onSelectChange({ target: { value: 'en' } } as React.ChangeEvent<HTMLSelectElement>)}
-        className='flex gap-2 text-lg px-5 cursor-pointer'
-    >
-        EN
-    </MenubarItem>
-    <MenubarItem
-        onClick={() => onSelectChange({ target: { value: 'ru' } } as React.ChangeEvent<HTMLSelectElement>)}
-        className='flex gap-2 text-lg px-5 cursor-pointer'
-    >
-        РУ
-    </MenubarItem>
-    <MenubarItem
-        onClick={() => onSelectChange({ target: { value: 'uz' } } as React.ChangeEvent<HTMLSelectElement>)}
-        className='flex gap-2 text-lg px-5 cursor-pointer'
-    >
-        {"O\'z"}
-    </MenubarItem>
-</MenubarContent>
+							<MenubarItem
+								onClick={() => onSelectChange({ target: { value: 'en' } } as React.ChangeEvent<HTMLSelectElement>)}
+								className='flex gap-2 text-lg px-5 cursor-pointer'
+							>
+								EN
+							</MenubarItem>
+							<MenubarItem
+								onClick={() => onSelectChange({ target: { value: 'ru' } } as React.ChangeEvent<HTMLSelectElement>)}
+								className='flex gap-2 text-lg px-5 cursor-pointer'
+							>
+								РУ
+							</MenubarItem>
+							<MenubarItem
+								onClick={() => onSelectChange({ target: { value: 'uz' } } as React.ChangeEvent<HTMLSelectElement>)}
+								className='flex gap-2 text-lg px-5 cursor-pointer'
+							>
+								{"O\'z"}
+							</MenubarItem>
+						</MenubarContent>
 						</MenubarMenu>
 					</Menubar>
 
@@ -212,7 +212,13 @@ const Navigation = () => {
 								</SheetContent>
 							</Sheet>
 						</nav>
-						<div className="flex flex-row-reverse">
+						<div>
+
+						<div className='mt-1'>
+										<iframe className='w-full h-56' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11987.402551080744!2d69.2336180576416!3d41.312112800000115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba72319fe35%3A0x13c479f0c40c00e7!2z0JDRgdGB0L7RhtC40LDRhtC40Y8g0LHQsNC90LrQvtCyINCj0LfQsdC10LrQuNGB0YLQsNC90LA!5e0!3m2!1sru!2s!4v1711557353948!5m2!1sru!2s" style={{border: 0}} allowFullScreen referrerPolicy="no-referrer-when-downgrade"></iframe>
+									</div>
+
+							<div className="flex flex-row-reverse">
 						<select defaultValue={localActive} 
 						// disabled={isPending}
 							className='navb-select bg-transparent h-[30px] outline-none font-serif' onChange={onSelectChange}>
@@ -220,6 +226,7 @@ const Navigation = () => {
 							<option className='text-black' value="uz">UZ</option>
 							<option className='text-black' value="ru">РУ</option>
 						</select>
+						</div>
 						</div>
 					</SheetContent>
 				</Sheet>
@@ -234,7 +241,7 @@ const Navigation = () => {
 						width="0"
 						height="0"
 						sizes="100vw"
-						className="w-auto h-30 mb-1"
+						className="w-auto h-30 xl:h-36 mb-1"
 						alt="hero image"
 						priority={true}
 					/>
