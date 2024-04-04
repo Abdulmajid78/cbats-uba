@@ -83,7 +83,7 @@ const Events = () => {
 				cardDetailedText: (
 					<span className='mydeailcard p-6'>
 						{t("event22")} <br /> {t("event23")} <br /> {t("event24")}<br />
-						14.00-14.15 {t("tema1")} <br />  {t("event26")} <br />
+						14.00-14.15 {t("tema1")} <br /> 
 						14.15-14.30 {t("tema2")} <br /> {t("event27")} <br /> 
 						14.30-14.45 {t("tema3")} <br /> {t("event28")} <br />
 						14.45-15.00 {t("tema4")} <br /> {t("event30")} <br />
