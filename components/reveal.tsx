@@ -1,9 +1,7 @@
 'use client'
-import React, { useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import { motion, useInView, useAnimation } from 'framer-motion'
 import { cx } from 'class-variance-authority'
-import bgWave from '@public/images/glitter.png'
-import Link from 'next/link'
 import Image from 'next/image'
 
 type Props = {
@@ -30,13 +28,7 @@ const Reveal = ({
 	const mainControls = useAnimation()
 	const slideControls = useAnimation()
 
-	// useEffect(() => {
-	// 	if (isInView) {
-	// 		mainControls.start('visible')
-	// 		slideControls.start('visible')
-	// 	}
-	// 	console.log(isInView)
-	// }, [isInView, mainControls, slideControls])
+	
 	return (
 		<div
 			ref={ref}
@@ -53,7 +45,7 @@ const Reveal = ({
 					}}
 					initial='hidden'
 					whileInView='visible'
-					transition={{ duration: 0.5, delay: 0.25 }}
+					transition={{ duration: 0.1, delay: 0.25 }}
 				>
 					{children}
 				</motion.div>
@@ -112,6 +104,22 @@ const Reveal = ({
 						backgroundColor: 'rgb(0 173 255 / 40%)',
 					}}
 				></motion.div>
+			) : slideControl === true && slidePosition === 'right' ? (
+				<motion.div
+					variants={{
+						hidden: { left: '0%' },
+						visible: { left: '100%' },
+						
+						// hidden: { opacity: 0, y: y },
+						// visible: { opacity: 1, y: 0 },
+					}}
+					initial='hidden'
+					whileInView='visible'
+					transition={{ duration: 1, ease: 'easeInOut', delay: 0.5 }} // Adjust the delay here as needed
+					
+				></motion.div>
+
+				
 			) : (
 				<></>
 			)}

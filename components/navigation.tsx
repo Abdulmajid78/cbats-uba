@@ -74,7 +74,7 @@ const Navigation = () => {
 						width="0"
 						height="0"
 						sizes="100vw"
-						className="w-auto h-30 xl:h-36 mb-1"
+						className="w-auto h-30 mb-1"
 						alt="hero image"
 						priority={true}
 					/>
@@ -174,7 +174,7 @@ const Navigation = () => {
 						<FiMenu fontSize="35px" />
 					</SheetTrigger>
 					<SheetContent
-						className="max-w-[400px] w-full bg-sky-600 text-white flex flex-col gap-16  overflow-y-scroll">
+						className="max-w-[400px] w-full bg-sky-600 text-white flex flex-col gap-10  overflow-y-scroll">
 						<nav className="flex flex-col gap-6 mt-14">
 							{navigationList.map(item => (
 								<SheetClose asChild key={item.link}>
@@ -241,7 +241,7 @@ const Navigation = () => {
 						width="0"
 						height="0"
 						sizes="100vw"
-						className="w-auto h-30 xl:h-36 mb-1"
+						className="w-auto h-30 mb-1"
 						alt="hero image"
 						priority={true}
 					/>

@@ -26,8 +26,9 @@ const t = useTranslations("Index")
 					</h1>
 				</Reveal> */}
 				<div className='rounded-xl w-full flex md:flex-row flex-col gap-5 mb-20 items-center'>
-					
+				
 					<div className='lg:w-3/6 w-full'>
+					<Reveal slideControl = {false} slidePosition = {'right'}>
 						<Image
 							src='/images/top.webp'
 							alt='news image'
@@ -38,25 +39,27 @@ const t = useTranslations("Index")
 							priority={true}
 							quality={70}
 						/>
+						</Reveal>
 					</div>
 				
 				{/* p */}
 					<div className='flex flex-col h-[360px] w-full xl:w-3/5 mx-2'>
-					<h1 className='text-2xl lg:text-3xl font-serif font-bold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
-							{t("ABOUTCBATS")}
+						<Reveal>
+							<div>
+							<h1 className='text-2xl lg:text-3xl font-serif font-bold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
+								{t("ABOUTCBATS")}
 							</h1>
-							<Reveal>
-								<p className='font-normal lg:pt-4 lg:text-xl sm:text-base text-base text-justify lg:pr-5 text-gray-600'>
-									{t("TheCouncilOf")}
-									<br />
-									<br />
-									{t("ItWasEstablished")}
-									
-									<br />
-									{t("ItsMembersAre")}
-								</p>
-							</Reveal>
-						{/* link */}
+							
+							<p className='font-normal lg:pt-4 lg:text-xl sm:text-base text-base text-justify lg:pr-5 text-gray-600'>
+								{t("TheCouncilOf")}
+								<br />
+								<br />
+								{t("ItWasEstablished")}
+								
+								<br />
+								{t("ItsMembersAre")}
+							</p>
+							{/* link */}
 							<Link
 								className='flex opacity-1 pt-5 gap-3 group text-blue-500'
 								href='https://www.tdbbk.org/tr'
@@ -76,6 +79,10 @@ const t = useTranslations("Index")
 									<BsArrowRight />
 								</span>
 							</Link>
+							</div>
+						
+						
+						</Reveal>
 					</div>
 				</div>
 			</section>
