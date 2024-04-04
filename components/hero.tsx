@@ -22,7 +22,7 @@ const Hero = () => {
 					</div>
 				</motion.div> */}
 				<div>
-					<h1 className='md:text-3xl sm:text-[44px] ,lg:text-4xl text-start text-gray-800'>{t("Welcometo")}</h1>
+					<h1 className='md:text-3xl sm:text-[44px] lg:text-4xl text-start text-gray-800'>{t("Welcometo")}</h1>
 					<h1 className='md:text-4xl text-center xl:px-[20px] sm:text-[44px] text-xl text-gray-800'> {t('FinanceTrends')}</h1>
 					<h1 className='md:text-4xl text-center xl:px-[20px] mt-2 sm:text-[44px] text-xl text-gray-800'>{t("date")}</h1>
 				</div>

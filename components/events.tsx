@@ -119,15 +119,15 @@ const Events = () => {
 			className='w-full h-[2000px] object-contain z-[-50] top-[190px] absolute'
 			src="/images/header__bg.webp" alt="" />
 			<Reveal>
-				<div className='xl:w-2/3 text-center mx-auto'>
+				<div className='xl:w-2/3 lg:mt-4 xl:mt-10 mt-5 text-center mx-auto'>
 					<h1 className='text-2xl lg:text-3xl leading-9 md:leading-7 lg:leading-9 text-gray-800 font-serif font-bold text-center'>
 						{t("financee")}
 					</h1>
 					<h1 className='text-2xl lg:text-3xl leading-9 md:leading-7 lg:leading-9 text-gray-800 font-serif font-bold mb-10 text-center'>
 						{t("date")}</h1>
-				<h1 className='text-3xl lg:text-4xl leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
-					{t("EventProgram")}
-				</h1>
+					<h1 className='text-3xl lg:text-4xl leading-9 md:leading-7 lg:leading-9 text-gray-800 mb-10 text-center'>
+						{t("EventProgram")}
+					</h1>
 				</div>
 			</Reveal>
 

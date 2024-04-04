@@ -25,7 +25,7 @@ const News = () => {
 			<div className='container news gap-4'>
 				<div className='news-item grid gap-4'>
 				<div
-						className='p-5 flex gap-5 rounded-xl border bg-card text-card-foreground card shadow-none'
+						className='p-2 flex gap-5 rounded-xl border bg-card text-card-foreground card shadow-none'
 					>
 						
 						<Reveal slideControl={true} mainControl={false} width='100%'>
@@ -80,7 +80,7 @@ const News = () => {
 
 
 					<div
-						className='p-5 flex gap-5 rounded-xl border bg-card text-card-foreground card shadow-none'
+						className='p-2 flex gap-5 rounded-xl border bg-card text-card-foreground card shadow-none'
 					>
 						
 							<Reveal slideControl={true} mainControl={false} width='100%'>
@@ -133,7 +133,7 @@ const News = () => {
 				</div>
 
 
-				<div className='p-5 grid grid-cols-news gap-5 rounded-xl border bg-card new3-item text-card-foreground card shadow-none'>
+				<div className='p-2 grid grid-cols-news gap-5 rounded-xl border bg-card new3-item text-card-foreground card shadow-none'>
 					<Reveal
 						slideControl={true}
 						mainControl={false}
