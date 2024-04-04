@@ -5,9 +5,11 @@ import Link from 'next/link'
 import React from 'react'
 import ScrollUp from '@components/scroll-up'
 import { BsArrowRight } from 'react-icons/bs'
-import Reveal from './reveal'
 import { useTranslations } from 'next-intl'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
+AOS.init();
 
 
 const AboutUs = () => {
@@ -28,7 +30,13 @@ const t = useTranslations("Index")
 				<div className='rounded-xl w-full flex md:flex-row flex-col gap-5 mb-20 items-center'>
 				
 					<div className='lg:w-3/6 w-full'>
-					<Reveal slideControl = {false} slidePosition = {'right'}>
+					<div data-aos="fade-up"
+					 data-aos-offset="100"
+					 data-aos-duration="1000"
+					 data-aos-easing="ease-in-out"
+					 data-aos-mirror="true"
+					 data-aos-once="false"
+					>
 						<Image
 							src='/images/top.webp'
 							alt='news image'
@@ -39,12 +47,17 @@ const t = useTranslations("Index")
 							priority={true}
 							quality={70}
 						/>
-						</Reveal>
+					</div>
 					</div>
 				
 				{/* p */}
 					<div className='flex flex-col h-[360px] w-full xl:w-3/5 mx-2'>
-						<Reveal>
+						<div data-aos="fade-up"
+					 data-aos-offset="100"
+					 data-aos-delay='270'
+					 data-aos-duration="1000"
+					 data-aos-easing="ease-in-out"
+					 data-aos-mirror="true">
 							<div>
 							<h1 className='text-2xl lg:text-3xl font-serif font-bold leading-9 md:leading-7 lg:leading-9 text-gray-800 text-center'>
 								{t("ABOUTCBATS")}
@@ -82,7 +95,7 @@ const t = useTranslations("Index")
 							</div>
 						
 						
-						</Reveal>
+						</div>
 					</div>
 				</div>
 			</section>
