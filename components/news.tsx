@@ -135,10 +135,7 @@ const News = () => {
 
 				<div className='p-2 grid grid-cols-news gap-5 rounded-xl border bg-card new3-item text-card-foreground card shadow-none'>
 					<Reveal
-						slideControl={true}
-						mainControl={false}
-						slidePosition='bottom'
-						className='news-image'
+						
 					>
 						<Image
 							src='/images/news/news-3.webp'

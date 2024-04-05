@@ -27,27 +27,27 @@ const t = useTranslations("Index")
 						ABOUT CBATS
 					</h1>
 				</Reveal> */}
-				<div className='rounded-xl w-full flex md:flex-row flex-col gap-5 mb-20 items-center'>
+				<div className='rounded-xl w-full flex xl:flex-row flex-col gap-5 mb-20 items-center'>
 				
-					<div className='lg:w-3/6 w-full'>
-					<div data-aos="fade-up"
-					 data-aos-offset="100"
-					 data-aos-duration="1000"
-					 data-aos-easing="ease-in-out"
-					 data-aos-mirror="true"
-					 data-aos-once="false"
-					>
-						<Image
-							src='/images/top.webp'
-							alt='news image'
-							width={0}
-							height={0}
-							sizes='80vw'
-							className='w-full rounded-xl'
-							priority={true}
-							quality={70}
-						/>
-					</div>
+					<div className='xl:w-3/6 w-full'>
+						<div data-aos="fade-up"
+						data-aos-offset="100"
+						data-aos-duration="1000"
+						data-aos-easing="ease-in-out"
+						data-aos-mirror="true"
+						data-aos-once="false"
+						>
+							<Image
+								src='/images/top.webp'
+								alt='news image'
+								width={0}
+								height={0}
+								sizes='80vw'
+								className='w-full rounded-xl'
+								priority={true}
+								quality={70}
+							/>
+						</div>
 					</div>
 				
 				{/* p */}

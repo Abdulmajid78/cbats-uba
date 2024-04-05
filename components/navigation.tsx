@@ -66,11 +66,11 @@ const Navigation = () => {
 			${
                 scrollHeight > 0 ? 'h-32' : 'h-56'
             }`}		>
-			<div className="container-fluid lg:mx-48 my-1 md:my-0 flex justify-between items-center">
+			<div className="container-fluid xl:mx-48 my-1 md:my-0 flex justify-between items-center">
 				{/* logo start */}
 				<Link
 					href="/"
-					className={`flex flex-col items-center cursor-pointer relative ${scrollHeight > 0 ? "w-24" : "lg:w-[170px] w-32" }`}
+					className={`flex flex-col items-center cursor-pointer relative ${scrollHeight > 0 ? "w-24" : " w-32" }`}
 				>
 					<Image
 						src="/images/logo-uba.png"
@@ -237,7 +237,7 @@ const Navigation = () => {
 				{/* logo start */}
 				<Link
 					href="/"
-					className={`flex flex-col items-center cursor-pointer relative ${scrollHeight > 0 ? "w-24" : "lg:w-[170px] w-32" }`}
+					className={`flex flex-col items-center cursor-pointer relative ${scrollHeight > 0 ? "w-24" : " w-32" }`}
 				>
 					<Image
 						src="/images/logo.png"
