@@ -161,7 +161,7 @@ const Navigation = () => {
 								onClick={() => onSelectChange({ target: { value: 'uz' } } as React.ChangeEvent<HTMLSelectElement>)}
 								className='flex gap-2 text-lg px-5 cursor-pointer'
 							>
-								{"O\'z"}
+								{"O\'Z"}
 							</MenubarItem>
 						</MenubarContent>
 						</MenubarMenu>
@@ -222,13 +222,20 @@ const Navigation = () => {
 									</div>
 
 									<div className="mobile flex flex-row-reverse gap-2 mt-3">
-										<button onClick={() => onSelectChange({ target: { value: 'ru' } })} className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
-											РУ
+									<button onClick={() => onSelectChange({ target: { value: 'ru' } } as React.ChangeEvent<HTMLSelectElement>)} className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
+  											РУ
 										</button>
-										<button onClick={() => onSelectChange({ target: { value: 'uz' } })} className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
-											UZ
+										
+										<button 
+										onClick={() => onSelectChange({ target: { value: 'uz' } } as React.ChangeEvent<HTMLSelectElement>)}
+										className='flex gap-2 text-lg px-5 cursor-pointer'
+									>
+										{"O\'Z"}
 										</button>
-										<button onClick={() => onSelectChange({ target: { value: 'en' } })} className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
+
+										<button onClick={() => onSelectChange({ target: { value: 'en' } } as React.ChangeEvent<HTMLSelectElement>)}
+											className='flex gap-2 text-lg px-5 cursor-pointer'
+										>
 											EN
 										</button>
 									</div>
