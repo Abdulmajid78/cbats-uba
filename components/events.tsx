@@ -10,6 +10,7 @@ const Events = () => {
 
 	const [isClient, setIsClient] = useState(false);
 	const [scrollHeight, setScrollHeight] = useState(0);
+	const [screen, setScreen] = useState(0)
 
 
       useEffect(() => {
@@ -17,6 +18,8 @@ const Events = () => {
 		
 		const handleScroll = () => {
             const scrolled = window.scrollY;
+			const trwe = window.innerWidth;
+			setScreen(trwe);
             setScrollHeight(scrolled);
         };
 
@@ -120,7 +123,7 @@ const Events = () => {
 			src="/images/header__bg.webp" alt="" />
 			<Reveal>
 				<div className='xl:w-2/3 lg:mt-4 xl:mt-10 mt-5 text-center mx-auto'>
-					<h1 className='text-2xl lg:text-3xl leading-9 md:leading-7 lg:leading-9 text-gray-800 font-serif font-bold text-center'>
+					<h1 className={`eventh1 text-2xl lg:text-3xl leading-9 md:leading-7 lg:leading-9 text-gray-800 font-serif font-bold text-center `}>
 						{t("financee")}
 					</h1>
 					<h1 className='text-2xl lg:text-3xl leading-9 md:leading-7 lg:leading-9 text-gray-800 font-serif font-bold mb-10 text-center'>

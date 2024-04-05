@@ -8,12 +8,18 @@ import { BsArrowRight } from 'react-icons/bs'
 import { useTranslations } from 'next-intl'
 import AOS from 'aos';
 import "aos/dist/aos.css";
-
-AOS.init();
+import { useEffect } from 'react'
 
 
 const AboutUs = () => {
 const t = useTranslations("Index")
+
+if (typeof window !== 'undefined') {
+	AOS.init({});
+}
+// useEffect(() => {
+//     AOS.init({});
+//   }, []);
 
 	return (
 		<>
@@ -51,7 +57,7 @@ const t = useTranslations("Index")
 					</div>
 				
 				{/* p */}
-					<div className='flex flex-col h-[360px] w-full xl:w-3/5 mx-2'>
+					<div className='flex flex-col  w-full xl:w-3/5 mx-2'>
 						<div data-aos="fade-up"
 					 data-aos-offset="100"
 					 data-aos-delay='270'

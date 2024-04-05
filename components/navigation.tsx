@@ -62,11 +62,11 @@ const Navigation = () => {
 	return (
 		<div
 			style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
-			className={`w-full py-1 left-0 top-0 sticky z-30 transition-all backdrop-blur-sm 
+			className={`w-full sm:py-1 py-7 left-0 top-0 sticky z-30 transition-all backdrop-blur-sm 
 			${
                 scrollHeight > 0 ? 'h-32' : 'h-56'
             }`}		>
-			<div className="container-fluid xl:mx-48 my-1 md:my-0 flex justify-between items-center">
+			<div className={`container-fluid xl:mx-48 my-1  md:my-0 flex justify-between items-center ${scrollHeight > 0 ? "xl:my-2" : "xl:my-5" }`}>
 				{/* logo start */}
 				<Link
 					href="/"
@@ -217,19 +217,21 @@ const Navigation = () => {
 						</nav>
 						<div>
 
-						<div className='mt-1'>
+						<div className='mt-0'>
 										<iframe className='w-full h-56' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11987.402551080744!2d69.2336180576416!3d41.312112800000115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba72319fe35%3A0x13c479f0c40c00e7!2z0JDRgdGB0L7RhtC40LDRhtC40Y8g0LHQsNC90LrQvtCyINCj0LfQsdC10LrQuNGB0YLQsNC90LA!5e0!3m2!1sru!2s!4v1711557353948!5m2!1sru!2s" style={{border: 0}} allowFullScreen loading='lazy' referrerPolicy="no-referrer-when-downgrade"></iframe>
 									</div>
 
-							<div className="flex flex-row-reverse">
-						<select defaultValue={localActive} 
-						// disabled={isPending}
-							className='navb-select bg-transparent h-[30px] outline-none font-serif' onChange={onSelectChange}>
-							<option className='text-black' value="en">EN</option>
-							<option className='text-black' value="uz">UZ</option>
-							<option className='text-black' value="ru">РУ</option>
-						</select>
-						</div>
+									<div className="mobile flex flex-row-reverse gap-2 mt-3">
+										<button onClick={() => onSelectChange({ target: { value: 'ru' } })} className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
+											РУ
+										</button>
+										<button onClick={() => onSelectChange({ target: { value: 'uz' } })} className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
+											UZ
+										</button>
+										<button onClick={() => onSelectChange({ target: { value: 'en' } })} className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
+											EN
+										</button>
+									</div>
 						</div>
 					</SheetContent>
 				</Sheet>
