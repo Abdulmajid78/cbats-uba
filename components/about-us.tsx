@@ -81,7 +81,7 @@ if (typeof window !== 'undefined') {
 							{/* link */}
 							<Link
 								className='flex opacity-1 pt-5 gap-3 group text-blue-500'
-								href='https://www.tdbbk.org/tr'
+								href='https://www.tdbbk.org'
 							>
 								<p
 									style={{

@@ -11,7 +11,7 @@ const Footer = () => {
 
 	return (
 		<footer
-		style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.png) ', }}
+		style={{ background: 'linear-gradient(to bottom, rgba( 0, 168, 207,0.6), rgba( 0, 118, 207,1)) ,url(/images/glitter.webp) ', }}
 		className='bg-secondary w-full mt-4 py-5 backdrop-blur-sm'
 		>
 			<div className='container flex justify-between sm:flex-row flex-col gap-5'>

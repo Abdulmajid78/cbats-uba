@@ -89,7 +89,7 @@ const Partners = () => {
 							</a>
 						</div>
 						<div className='w-full focus:outline-none border focus:border-gray-800 border-transparent bg-gray-100 flex justify-center items-center flex-col text-center py-10 px-12 space-y-6 group'>
-							<a href="https://www.tbb.org.tr/tr">
+							<a href="https://www.tbb.org.tr">
 								<Image
 								width={0}
 								height={0}

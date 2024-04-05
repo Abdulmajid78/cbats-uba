@@ -85,7 +85,7 @@ const Reveal = ({
 					transition={{ duration: 1, ease: 'easeInOut', delay: 0.5 }}
 					className='absolute top-0 bottom-0 left-0 right-0 backdrop-blur-sm z-20 bg-no-repeat bg-[#daaf71] bg-[length:100%_442px] bg-bottom'
 					style={{
-						backgroundImage: `url(images/glitter.png)`,
+						backgroundImage: `url(images/glitter.webp)`,
 						backgroundColor: 'rgb(0 173 255 / 40%)',
 					}}
 				></motion.div>
@@ -100,7 +100,7 @@ const Reveal = ({
 					transition={{ duration: 1, ease: 'easeInOut', delay: 0.5 }}
 					className='absolute top-0 bottom-0 left-0 right-0 backdrop-blur-sm z-20 bg-no-repeat bg-[rgb(0 173 255 / 40%)] bg-[length:270px_100%] bg-left'
 					style={{
-						backgroundImage: `url(images/glitter.png)`,
+						backgroundImage: `url(images/glitter.webp)`,
 						backgroundColor: 'rgb(0 173 255 / 40%)',
 					}}
 				></motion.div>
