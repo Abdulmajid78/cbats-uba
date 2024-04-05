@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 	title: 'Home - UBA-CBATS',
 	icons: 'images/logo-uba.png',
 	description: 'Ассоциация банков Узбекистана',
-	theme_color: "#ffffff"
+	themeColor: "#ffffff"
 	
 }
 
