@@ -189,3 +189,7 @@ select.navb-select option {
 		width: 90%!important;
 	}
 }
+
+h2 > b {
+	font-size: 20px;
+}
