@@ -29,7 +29,7 @@ const Hero = () => {
 					<h1 className='md:text-4xl font-normal text-center xl:px-[20px] mt-2 sm:text-[44px] text-xl text-gray-800'>{t("date")}</h1>
 				</div>
 				<div>
-					<h2 className='font-normal w-full sm:max-w-[1200px] max-w-[400px] mx-auto sm:text-lg text-base text-center text-gray-600 !leading-6 mt-2 lg:px-[20px]'>{t("ConferenceWebsite")} <b className='font-normal text-black'>{t("FinanceTrends")}</b> {t("ConferenceWebsite2")}</h2>
+					<h2 className='font-normal w-full sm:max-w-[1200px] max-w-[400px] mx-auto sm:text-lg text-base text-center text-gray-600 !leading-6 mt-2 lg:px-[20px]'>{t("ConferenceWebsite")} <br /> <b>{t("FinanceTrends")}</b> <br /> {t("ConferenceWebsite2")}</h2>
 					<h2 className='font-normal w-full sm:max-w-[1200px] max-w-[400px] mx-auto sm:text-lg text-base text-center text-gray-600 !leading-6 mt-2 lg:px-[20px]'></h2>
 
 					<h2 className='font-normal w-full sm:max-w-[1000px] max-w-[400px] mx-auto sm:text-lg text-base text-center text-gray-600 !leading-6 lg:px-[20px]'>{t("TheConferenceIs")}</h2>
