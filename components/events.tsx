@@ -39,19 +39,19 @@ const Events = () => {
 
 	const items=[
 			{
-				title: "9:30-10:45",
+				title: "9:30-10:15",
 				cardDetailedText: (
 					<span className='mydeailcard p-6'>
-						9.30-10.00 {t("event1")} <br/>
+						09.30-09.30 {t("event1")} <br/>
 						{t("event2")}
 						<br />
-						10.00-10.05 {t("event3")}<br />
-						10.05-10.10 {t("event4")} <br />
-						10.10-10.15 {t("event441")} <br />
-						10.15-10.20 {t("event442")} <br />
-						10.20-10.25 {t("event443")} <br />
-						10.25-10.30 {t("event444")} <br />
-						10.30-10.45 {t("event5")}
+						09.30-09.35 {t("event3")}<br />
+						09.35-09.40 {t("event4")} <br />
+						09.40-09.45 {t("event441")} <br />
+						09.45-09.50 {t("event442")} <br />
+						09.50-09.55 {t("event443")} <br />
+						09.55-10.00 {t("event444")} <br />
+						10.00-10.15 {t("event5")}
 					</span>
 				),
 			},

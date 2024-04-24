@@ -191,5 +191,6 @@ select.navb-select option {
 }
 
 h2 > b {
-	font-size: 20px;
+	font-size: 24px;
+	line-height: 2rem;
 }

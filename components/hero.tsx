@@ -25,14 +25,13 @@ const Hero = () => {
 					>
 				<div>
 					<h1 className='md:text-3xl font-normal sm:text-[44px] lg:text-4xl text-center text-gray-800'>{t("Welcometo")}</h1>
-					<h1 className='md:text-4xl font-normal text-center xl:px-[20px] sm:text-[44px] text-xl text-gray-800'> {t('FinanceTrends')}</h1>
-					<h1 className='md:text-4xl font-normal text-center xl:px-[20px] mt-2 sm:text-[44px] text-xl text-gray-800'>{t("date")}</h1>
+					{/* <h1 className='md:text-4xl font-normal text-center xl:px-[20px] sm:text-[44px] text-xl text-gray-800'> {t('FinanceTrends')}</h1> */}
+					{/* <h1 className='md:text-4xl font-normal text-center xl:px-[20px] mt-2 sm:text-[44px] text-xl text-gray-800'>{t("date")}</h1> */}
 				</div>
 				<div>
-					<h2 className='font-normal w-full sm:max-w-[1200px] max-w-[400px] mx-auto sm:text-lg text-base text-center text-gray-600 !leading-6 mt-2 lg:px-[20px]'>{t("ConferenceWebsite")} <br /> <b>{t("FinanceTrends")}</b> <br /> {t("ConferenceWebsite2")}</h2>
-					<h2 className='font-normal w-full sm:max-w-[1200px] max-w-[400px] mx-auto sm:text-lg text-base text-center text-gray-600 !leading-6 mt-2 lg:px-[20px]'></h2>
-
-					<h2 className='font-normal w-full sm:max-w-[1000px] max-w-[400px] mx-auto sm:text-lg text-base text-center text-gray-600 !leading-6 lg:px-[20px]'>{t("TheConferenceIs")}</h2>
+					<h2 className='font-normal w-full sm:max-w-[1200px] max-w-[400px] mx-auto sm:text-2xl text-xl text-center text-gray-600 !leading-6 mt-2 lg:px-[20px] mb-3'>{t("ConferenceWebsite")} <br /> <b>{t("FinanceTrends")}</b> <br /> {t("ConferenceWebsite2")}</h2>
+						<br />
+					<h2 className='font-normal w-full sm:max-w-[1000px] max-w-[400px] mx-auto sm:text-xl text-base text-center text-gray-600 !leading-6 lg:px-[20px] mb-2'>{t("TheConferenceIs")}</h2>
 				</div>
 			</div>
 		</section>

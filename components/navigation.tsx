@@ -134,7 +134,7 @@ const Navigation = () => {
 <Menubar className='lg:block hidden'>
 						<MenubarMenu>
 							<MenubarTrigger className='h-[30px] outline-none'>
-									<p className='lg:text-2xl md:text-base  flex gap-1 items-center text-white font-serif'>
+									<p className='lg:text-2xl md:text-base flex gap-1 items-center text-white font-serif'>
 									<span>
 										<MdOutlineLanguage />
 									</span>
@@ -147,19 +147,19 @@ const Navigation = () => {
 							<MenubarContent className='min-w-[70px] text-center'>
 							<MenubarItem
 								onClick={() => onSelectChange({ target: { value: 'en' } } as React.ChangeEvent<HTMLSelectElement>)}
-								className='flex gap-2 text-lg px-5 cursor-pointer'
+								className='flex gap-2 text-lg px-5 cursor-pointer font-serif'
 							>
 								EN
 							</MenubarItem>
 							<MenubarItem
 								onClick={() => onSelectChange({ target: { value: 'ru' } } as React.ChangeEvent<HTMLSelectElement>)}
-								className='flex gap-2 text-lg px-5 cursor-pointer'
+								className='flex gap-2 text-lg px-5 cursor-pointer font-serif'
 							>
 								РУ
 							</MenubarItem>
 							<MenubarItem
 								onClick={() => onSelectChange({ target: { value: 'uz' } } as React.ChangeEvent<HTMLSelectElement>)}
-								className='flex gap-2 text-lg px-5 cursor-pointer'
+								className='flex gap-2 text-lg px-5 cursor-pointer font-serif'
 							>
 								{"O\'Z"}
 							</MenubarItem>
@@ -222,19 +222,20 @@ const Navigation = () => {
 									</div>
 
 									<div className="mobile flex flex-row-reverse gap-2 mt-3">
-									<button onClick={() => onSelectChange({ target: { value: 'ru' } } as React.ChangeEvent<HTMLSelectElement>)} className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
+									<button onClick={() => onSelectChange({ target: { value: 'ru' } } as React.ChangeEvent<HTMLSelectElement>)} 
+									className='navb-select h-[30px] border-b-indigo-500 outline-none bg-sky-400/50 p-2 flex justify-items-center items-center rounded-sm font-serif text-white'>
   											РУ
 										</button>
 										
 										<button 
 										onClick={() => onSelectChange({ target: { value: 'uz' } } as React.ChangeEvent<HTMLSelectElement>)}
-										className='flex gap-2 text-lg px-5 cursor-pointer'
+										className='flex gap-2 text-lg px-5 cursor-pointer font-serif'
 									>
 										{"O\'Z"}
 										</button>
 
 										<button onClick={() => onSelectChange({ target: { value: 'en' } } as React.ChangeEvent<HTMLSelectElement>)}
-											className='flex gap-2 text-lg px-5 cursor-pointer'
+											className='flex gap-2 text-lg px-5 cursor-pointer font-serif'
 										>
 											EN
 										</button>
